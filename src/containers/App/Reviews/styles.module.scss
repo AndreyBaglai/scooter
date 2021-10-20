@@ -1,0 +1,57 @@
+.wrapper {
+  overflow-x: hidden;
+
+  .title {
+    font-weight: 500;
+    font-size: 45px;
+    color: #ff4c0d;
+    margin: 0 0 40px 0;
+  }
+
+  .slider {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    .slide {
+      background: #151515;
+      border-radius: 15px;
+      padding: 28px;
+      margin-right: 40px;
+      min-width: 460px;
+
+      .name {
+        color: #f1f1f1;
+        font-weight: 600;
+        font-size: 20px;
+        margin: 0 0 14px 0;
+      }
+
+      .orangeLine {
+        width: 100px;
+        height: 3px;
+        background: #ff4c0d;
+      }
+
+      .text {
+        color: #f1f1f1;
+        font-weight: normal;
+        font-size: 14px;
+
+        ul {
+          list-style: none;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+  .controls {
+    display: flex;
+    justify-content: space-between;
+
+    .leftArrow {
+      margin-right: 18px;
+    }
+  }
+}

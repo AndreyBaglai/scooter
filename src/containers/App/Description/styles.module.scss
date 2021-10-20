@@ -1,0 +1,43 @@
+.wrapper {
+  background-color: #000000;
+
+  .title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 45px;
+    color: #f1f1f1;
+    max-width: 870px;
+  }
+
+  .row {
+    display: flex;
+    color: #f1f1f1;
+    margin-bottom: 30px;
+
+    .column {
+      flex-grow: 1;
+      width: 33%;
+    }
+  }
+
+  .line {
+    height: 3px;
+    width: 100%;
+    background: #f1f1f1;
+  }
+
+  .imagesWrapper {
+    display: flex;
+    max-width: 100%;
+
+    .bigImg {
+      max-width: 70%;
+    }
+
+    .smallImg {
+      width: 360px;
+      height: 300px;
+      margin-left: 40px;
+    }
+  }
+}

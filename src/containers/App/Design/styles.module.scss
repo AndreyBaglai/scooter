@@ -1,0 +1,46 @@
+.wrapper {
+  background-color: #eeeeee;
+
+  .title {
+    font-weight: 500;
+    font-size: 45px;
+    color: #ff4c0d;
+    margin: 0;
+  }
+
+  .imgWrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .item {
+      flex: 1;
+      height: 550px;
+      background: #000000;
+      border-radius: 15px;
+      position: relative;
+
+      &:last-child {
+        margin-left: 40px;
+      }
+
+      .description {
+        position: absolute;
+        bottom: 60px;
+        left: 60px;
+        color: #f1f1f1;
+
+        .text {
+          font-weight: 600;
+          font-size: 20px;
+          margin: 0 0 20px 0;
+        }
+
+        .subtext {
+          font-weight: normal;
+          font-size: 14px;
+          max-width: 430px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.wrapper {
+  background-image: url('../../../sources/images/brand.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  position: relative;
+  min-width: 100%;
+
+  .content {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0;
+    height: 100%;
+    position: relative;
+
+    .title {
+      font-weight: 500;
+      font-size: 45px;
+      color: #ff4c0d;
+      margin: 110px 0 40px 0;
+    }
+
+    .text {
+      font-weight: normal;
+      font-size: 14px;
+      color: #151515;
+      max-width: 440px;
+      margin: 0 0 20px 0;
+    }
+  }
+}
+
+.circlesWrapper {
+  position: absolute;
+  right: 140px;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style: none;
+  padding-left: 0;
+
+  .circle {
+    width: 10px;
+    height: 10px;
+    background: #151515;
+    opacity: 0.2;
+    margin-bottom: 30px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+}

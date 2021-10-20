@@ -1,0 +1,22 @@
+.footer {
+  background: #222222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f1f1f1;
+  font-weight: normal;
+  font-size: 14px;
+  height: 172px;
+
+  p {
+    margin: 0 0 10px 0;
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .right {
+    text-align: right;
+  }
+}

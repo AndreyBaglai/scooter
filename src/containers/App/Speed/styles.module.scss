@@ -1,0 +1,30 @@
+.wrapper {
+  background-image: url('../../../sources/images/speed.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+
+  .content {
+    max-width: 388px;
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0;
+    height: 100%;
+
+    .title {
+      font-weight: 500;
+      font-size: 45px;
+      color: #f1f1f1;
+      margin: 110px 0 40px 0;
+    }
+
+    .text {
+      font-weight: normal;
+      font-size: 14px;
+      color: #f1f1f1;
+      max-width: 285px;
+      margin: 0;
+    }
+  }
+}
