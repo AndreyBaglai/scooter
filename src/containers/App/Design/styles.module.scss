@@ -1,11 +1,15 @@
 .wrapper {
-  background-color: #eeeeee;
+  background-color: #000;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 120px;
 
   .title {
     font-weight: 500;
     font-size: 45px;
     color: #ff4c0d;
-    margin: 0;
+    margin: 0 0 70px 0;
+    max-width: 740px;
   }
 
   .imgWrapper {
@@ -18,6 +22,10 @@
       background: #000000;
       border-radius: 15px;
       position: relative;
+
+      img {
+        width: 100%;
+      }
 
       &:last-child {
         margin-left: 40px;
@@ -39,8 +47,30 @@
           font-weight: normal;
           font-size: 14px;
           max-width: 430px;
+          line-height: 1.5;
         }
       }
     }
   }
+}
+
+.line {
+  position: absolute;
+  bottom: -900px;
+  left: 0;
+  z-index: -1;
+}
+
+.topEllipse {
+  position: absolute;
+  top: -148px;
+  right: -381px;
+  z-index: -1;
+}
+
+.bottomEllipse {
+  position: absolute;
+  bottom: -450px;
+  left: 0;
+  z-index: -1;
 }
