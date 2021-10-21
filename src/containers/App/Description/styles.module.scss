@@ -2,6 +2,7 @@
   background-color: #000000;
   position: relative;
   z-index: 10;
+  margin-bottom: 120px;
 
   .title {
     margin: 0 0 60px 0;
@@ -46,7 +47,9 @@
         background: #ff4c0d;
       }
 
-      .line, .text, .columnTitle {
+      .line,
+      .text,
+      .columnTitle {
         opacity: 1;
       }
     }
@@ -64,6 +67,7 @@
       width: 360px;
       height: 300px;
       margin-left: 40px;
+      z-index: -2;
     }
   }
 }
@@ -72,5 +76,12 @@
   position: absolute;
   left: 0;
   top: -350px;
+  z-index: -1;
+}
+
+.bottomLine {
+  position: absolute;
+  bottom: -121px;
+  left: 63px;
   z-index: -1;
 }

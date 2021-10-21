@@ -4,6 +4,7 @@ import imgSrc1 from '../../../sources/images/power-1.png';
 import imgSrc2 from '../../../sources/images/power-2.png';
 
 import { ReactComponent as EllipseIcon } from 'sources/icons/ellipses/description.svg';
+import { ReactComponent as BottomLineIcon } from 'sources/icons/lines/description.svg';
 
 import styles from './styles.module.scss';
 import cn from 'classnames';
@@ -48,6 +49,8 @@ const Description: React.FC = () => {
         <img src={imgSrc1} alt="power1" className={styles.bigImg}/>
         <img src={imgSrc2} alt="power2" className={styles.smallImg}/>
       </div>
+
+      <BottomLineIcon className={styles.bottomLine} />
     </section>
   );
 };

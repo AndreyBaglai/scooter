@@ -1,9 +1,19 @@
 .wrapper {
-  background-image: url('../../../sources/images/speed.png');
+  background-image: url('../../../sources/images/speed-1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 600px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 130px;
+
+  .topEllipse {
+    position: absolute;
+    top: -419px;
+    right: -24px;
+    z-index: -1;
+  }
 
   .content {
     max-width: 388px;
@@ -25,6 +35,14 @@
       color: #f1f1f1;
       max-width: 285px;
       margin: 0;
+      line-height: 1.5;
     }
   }
+}
+
+.bottomLine {
+  position: absolute;
+  bottom: -973px;
+  right: 0;
+  z-index: -1;
 }
