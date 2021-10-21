@@ -15,7 +15,7 @@ const Questions: React.FC = ({ children }) => {
     <>
       <section className={cn('container', styles.wrapper)}>
         <EllipseIcon className={styles.ellipse} />
-        <LineIcon className={styles.lineIcon} />
+        {/* <LineIcon className={styles.lineIcon} /> */}
 
         <div className={styles.description}>
           <div className={styles.title}>Часто задаваемые вопросы</div>

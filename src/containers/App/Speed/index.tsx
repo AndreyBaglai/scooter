@@ -10,8 +10,8 @@ import styles from './styles.module.scss';
 const Speed: React.FC = () => {
   return (
     <section className={styles.wrapper}>
-      <TopEllipseIcon className={styles.topEllipse} />
-      
+      {/* <TopEllipseIcon className={styles.topEllipse} /> */}
+
       <div className="container">
         <div className={styles.content}>
           <Logo />

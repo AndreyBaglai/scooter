@@ -50,7 +50,7 @@ const Description: React.FC = () => {
         <img src={imgSrc2} alt="power2" className={styles.smallImg}/>
       </div>
 
-      <BottomLineIcon className={styles.bottomLine} />
+      {/* <BottomLineIcon className={styles.bottomLine} /> */}
     </section>
   );
 };

@@ -13,7 +13,7 @@ import cn from 'classnames';
 const Security: React.FC = () => {
   return (
     <section className={cn('container', styles.wrapper)}>
-      <LeftEllipseIcon className={styles.leftEllipse} />
+      {/* <LeftEllipseIcon className={styles.leftEllipse} /> */}
 
       <h2 className={styles.title}>Заботится о вашей безопасности</h2>
 
