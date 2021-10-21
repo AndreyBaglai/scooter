@@ -8,6 +8,10 @@
   display: flex;
   margin-left: 80px;
 
+  li:hover .link {
+    color: #FF4C0D;
+  }
+
   .link {
     text-decoration: none;
     transition: all 0.5s ease;

@@ -1,6 +1,9 @@
 .section {
   background-color: #000000;
   min-height: 890px;
+  z-index: 10;
+  margin-bottom: 110px;
+  position: relative;
 
   .title {
     display: block;
@@ -16,16 +19,30 @@
     display: block;
     font-weight: 600;
     font-size: 30px;
-    color: #FF4C0D;
+    color: #ff4c0d;
     max-width: 500px;
     text-align: left;
     margin: 30px 0 60px;
   }
+}
 
-  .bike {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 0;
-  }
+.topEllipse {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.bottomEllipse {
+  position: absolute;
+  left: 0;
+  top: 575px;
+  z-index: -1;
+}
+
+.bike {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }

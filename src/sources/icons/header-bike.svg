@@ -1,7 +1,6 @@
 <svg width="1187" height="885" viewBox="0 0 1187 885" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <mask id="mask0_2:127" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="-444" width="1946" height="1329">
-<rect y="-444" width="1946" height="1329" fill="url(#pattern0)"/>
-<rect y="-444" width="1946" height="1329" fill="url(#pattern1)"/>
+<rect y="-444" width="1946" height="1329" fill="url(#pattern1)" shape-rendering="crispEdges"/>
 </mask>
 <g mask="url(#mask0_2:127)">
 <rect y="-444" width="1946" height="1329" fill="url(#pattern2)" style="mix-blend-mode:multiply"/>
