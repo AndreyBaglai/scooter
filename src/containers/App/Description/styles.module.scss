@@ -1,8 +1,10 @@
 .wrapper {
   background-color: #000000;
+  position: relative;
+  z-index: 10;
 
   .title {
-    margin: 0;
+    margin: 0 0 60px 0;
     font-weight: 500;
     font-size: 45px;
     color: #f1f1f1;
@@ -17,13 +19,37 @@
     .column {
       flex-grow: 1;
       width: 33%;
-    }
-  }
+      cursor: pointer;
 
-  .line {
-    height: 3px;
-    width: 100%;
-    background: #f1f1f1;
+      .columnTitle {
+        font-weight: 600;
+        font-size: 20px;
+        opacity: 0.4;
+      }
+
+      .line {
+        height: 3px;
+        width: 100%;
+        background: #f1f1f1;
+        opacity: 0.4;
+      }
+
+      .text {
+        max-width: 360px;
+        line-height: 1.5;
+        opacity: 0.4;
+      }
+    }
+
+    .column.active {
+      .line {
+        background: #ff4c0d;
+      }
+
+      .line, .text, .columnTitle {
+        opacity: 1;
+      }
+    }
   }
 
   .imagesWrapper {
@@ -40,4 +66,11 @@
       margin-left: 40px;
     }
   }
+}
+
+.ellipse {
+  position: absolute;
+  left: 0;
+  top: -350px;
+  z-index: -1;
 }

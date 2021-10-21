@@ -26,18 +26,11 @@
   }
 }
 
-.topEllipse {
+.ellipse {
   position: absolute;
   top: 0;
   right: 0;
   z-index: -2;
-}
-
-.bottomEllipse {
-  position: absolute;
-  left: 0;
-  top: 575px;
-  z-index: -1;
 }
 
 .bike {
