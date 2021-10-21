@@ -1,5 +1,6 @@
 .wrapper {
   overflow-x: hidden;
+  margin-bottom: 120px;
 
   .title {
     font-weight: 500;
@@ -37,11 +38,15 @@
         color: #f1f1f1;
         font-weight: normal;
         font-size: 14px;
+        line-height: 1.5;
+      }
 
-        ul {
-          list-style: none;
-          padding-left: 0;
-        }
+      .innerText {
+        margin: 0;
+        color: #f1f1f1;
+        font-weight: normal;
+        line-height: 1.5;
+        font-size: 14px;
       }
     }
   }
@@ -52,6 +57,22 @@
 
     .leftArrow {
       margin-right: 18px;
+    }
+
+    .leftArrow, .rightArrow {
+      cursor: pointer;
+
+      circle, rect {
+        transition: all 0.5s ease;
+      }
+
+      &:hover circle {
+        fill: #FF4C0D;
+      }
+
+      &:hover rect {
+        fill: #fff;
+      }
     }
   }
 }

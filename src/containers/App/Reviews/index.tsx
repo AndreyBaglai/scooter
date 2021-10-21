@@ -33,15 +33,13 @@ const Reviews: React.FC = () => {
           <p className={styles.text}>
             Владею также первой версией самоката (m365). В версии pro 2 исправлено множество
             недостатков m365:
-            <ul>
-              <li>- усилен узел складывания и язычок </li>
-              <li>
-                - батарея находится в отдельном жёстком алюминиевом корпусе, что исключает её
-                поломку из-за тряски{' '}
-              </li>
-              <li>- установлена поддержка заднего крыла и защита провода заднего габарита.</li>
-            </ul>
           </p>
+          <p className={styles.innerText}>- усилен узел складывания и язычок </p>
+            <p className={styles.innerText}>
+              - батарея находится в отдельном жёстком алюминиевом корпусе, что исключает её поломку
+              из-за тряски{' '}
+            </p>
+            <p className={styles.innerText}>- установлена поддержка заднего крыла и защита провода заднего габарита.</p>
         </div>
 
         <div className={styles.slide}>
@@ -58,11 +56,12 @@ const Reviews: React.FC = () => {
           </p>
         </div>
       </div>
+
       <div className={styles.controls}>
         <Button>Оставить отзыв</Button>
         <div className={styles.arrowsWrapper}>
           <LeftArrowIcon className={styles.leftArrow} />
-          <RightArrowIcon />
+          <RightArrowIcon className={styles.rightArrow} />
         </div>
       </div>
     </section>

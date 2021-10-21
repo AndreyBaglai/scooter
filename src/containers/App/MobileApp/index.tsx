@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { ReactComponent as PhoneIcon } from 'sources/icons/phone.svg';
+import imgPath from 'sources/images/phone.png';
 import { ReactComponent as AppleIcon } from 'sources/icons/apple.svg';
 import { ReactComponent as GoogleIcon } from 'sources/icons/google.svg';
+import { ReactComponent as EllipseIcon } from 'sources/icons/ellipses/mobile-app.svg';
 
 import styles from './styles.module.scss';
 import cn from 'classnames';
@@ -26,9 +27,10 @@ const MobileApp: React.FC = () => {
           </li>
         </ul>
       </div>
-      <div className={styles.phoneWrapper}>
-        <PhoneIcon />
-      </div>
+
+      <img src={imgPath} alt="phone" className={styles.phone} />
+
+      <EllipseIcon className={styles.ellipse} />
     </section>
   );
 };

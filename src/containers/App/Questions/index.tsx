@@ -3,6 +3,10 @@ import React from 'react';
 import Button from 'components/Button';
 import Preview from '../Preview';
 
+import { ReactComponent as EllipseIcon } from 'sources/icons/ellipses/questions.svg';
+
+import { ReactComponent as LineIcon } from 'sources/icons/lines/questions.svg';
+
 import styles from './styles.module.scss';
 import cn from 'classnames';
 
@@ -10,6 +14,9 @@ const Questions: React.FC = ({ children }) => {
   return (
     <>
       <section className={cn('container', styles.wrapper)}>
+        <EllipseIcon className={styles.ellipse} />
+        <LineIcon className={styles.lineIcon} />
+
         <div className={styles.description}>
           <div className={styles.title}>Часто задаваемые вопросы</div>
           <p className={styles.text}>

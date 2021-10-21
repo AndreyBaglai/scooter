@@ -2,6 +2,8 @@ import React from 'react';
 
 import Logo from 'components/Logo';
 
+import { ReactComponent as LineIcon } from 'sources/icons/lines/brand.svg';
+
 import styles from './styles.module.scss';
 
 const Brand: React.FC = () => {
@@ -22,10 +24,12 @@ const Brand: React.FC = () => {
         </div>
       </div>
       <ul className={styles.circlesWrapper}>
-            <li className={styles.circle}></li>
-            <li className={styles.circle}></li>
-            <li className={styles.circle}></li>
-          </ul>
+        <li className={styles.circle}></li>
+        <li className={styles.circle}></li>
+        <li className={styles.circle}></li>
+      </ul>
+
+      <LineIcon className={styles.bottomLine} />
     </section>
   );
 };

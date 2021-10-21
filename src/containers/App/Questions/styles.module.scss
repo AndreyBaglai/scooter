@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-between;
   background: #000;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 120px;
 
   .description {
     min-width: 50%;
@@ -69,4 +72,19 @@
       }
     }
   }
+}
+
+.ellipse {
+  position: absolute;
+  left: 0;
+  top: -100px;
+  z-index: -1;
+}
+
+.lineIcon {
+  position: absolute;
+  left: 50px;
+  top: 550px;
+  z-index: -1;
+  transform: scale(1.1);
 }

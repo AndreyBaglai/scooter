@@ -6,6 +6,8 @@
   height: 600px;
   position: relative;
   min-width: 100%;
+  z-index: -10;
+  margin-bottom: 120px;
 
   .content {
     max-width: 500px;
@@ -28,6 +30,7 @@
       color: #151515;
       max-width: 440px;
       margin: 0 0 20px 0;
+      line-height: 1.5;
     }
   }
 }
@@ -49,4 +52,11 @@
     border-radius: 100%;
     cursor: pointer;
   }
+}
+
+.bottomLine {
+  position: absolute;
+  right: 0;
+  bottom: -972px;
+  z-index: -1;
 }

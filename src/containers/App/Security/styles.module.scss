@@ -1,11 +1,14 @@
 .wrapper {
   background-color: #000000;
+  position: relative;
+  z-index: 9;
+  margin-bottom: 120px;
 
   .title {
-    margin: 0;
+    margin: 0 0 60px 0;
     font-weight: 500;
     font-size: 45px;
-    color: #f1f1f1;
+    color: #ff4c0d;
     max-width: 870px;
   }
 
@@ -17,13 +20,49 @@
     .column {
       flex-grow: 1;
       width: 33%;
-    }
-  }
+      cursor: pointer;
 
-  .line {
-    height: 3px;
-    width: 100%;
-    background: #f1f1f1;
+      .columnTitle {
+        font-weight: 600;
+        font-size: 20px;
+        color: #f1f1f1;
+        opacity: 0.4;
+        max-width: 160px;
+        margin: 0 0 18px 0;
+      }
+
+      .line {
+        height: 3px;
+        width: 100%;
+        background: #f1f1f1;
+        opacity: 0.4;
+      }
+
+      .text {
+        font-weight: normal;
+        font-size: 14px;
+        color: #f1f1f1;
+        opacity: 0.4;
+        line-height: 1.5;
+        max-width: 260px;
+      }
+
+      .second {
+        max-width: 220px;
+      }
+    }
+
+    .active {
+      .line {
+        background: #ff4c0d;
+        opacity: 1;
+      }
+
+      .text,
+      .columnTitle {
+        opacity: 1;
+      }
+    }
   }
 
   .imagesWrapper {
@@ -38,6 +77,28 @@
       width: 360px;
       height: 300px;
       margin-left: 40px;
+      z-index: -2;
     }
   }
+}
+
+.leftEllipse {
+  position: absolute;
+  left: -30px;
+  bottom: -379px;
+  z-index: -1;
+}
+
+.rightEllipse {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.bottomLine {
+  position: absolute;
+  bottom: -300px;
+  right: 40px;
+  z-index: -1;
 }
