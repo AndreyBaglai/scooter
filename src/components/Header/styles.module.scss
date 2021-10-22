@@ -1,3 +1,5 @@
+@import 'sources/styles/media-mixin.scss';
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -6,4 +8,10 @@
   position: fixed;
   width: -webkit-fill-available;
   z-index: 1000;
+
+  button {
+    @include _769 {
+      display: none;
+    }
+  }
 }

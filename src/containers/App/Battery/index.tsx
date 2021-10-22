@@ -11,7 +11,7 @@ import cn from 'classnames';
 
 const Battery: React.FC = () => {
   return (
-    <section className={cn('container', styles.section)}>
+    <section className={cn('container', styles.battery)}>
       <h1 className={styles.title}>Стильный электросамокат с мощным аккумулятором</h1>
       <span className={styles.text}>
         Улучшенная производительность для дальних путешествий. Работает так же просто, как и
@@ -19,8 +19,8 @@ const Battery: React.FC = () => {
       </span>
       <ToggleTheme />
 
-      <EllipseIcon className={styles.ellipse} />
-      <BikeIcon className={styles.bike} />
+      {/* <EllipseIcon className={styles.ellipse} /> */}
+      {/* <BikeIcon className={styles.bike} /> */}
     </section>
   );
 };

@@ -14,7 +14,7 @@ const Questions: React.FC = ({ children }) => {
   return (
     <>
       <section className={cn('container', styles.wrapper)}>
-        <EllipseIcon className={styles.ellipse} />
+        {/* <EllipseIcon className={styles.ellipse} /> */}
         {/* <LineIcon className={styles.lineIcon} /> */}
 
         <div className={styles.description}>

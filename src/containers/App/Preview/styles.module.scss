@@ -1,3 +1,5 @@
+@import 'sources/styles/media-mixin.scss';
+
 .wrapper {
   background: #151515;
   max-width: 1160px;
@@ -10,11 +12,19 @@
   position: relative;
   z-index: 10;
 
+  @include _769 {
+    flex-direction: column;
+  }
+
   .description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: inherit;
+
+    @include _769 {
+      flex: 1;
+    }
 
     .title {
       max-width: 494px;
@@ -23,6 +33,11 @@
       color: #f1f1f1;
       margin: 0 0 34px;
 
+      @include _769 {
+        font-size: 25px;
+        max-width: 300px;
+      }
+
       .price {
         color: #ff4c0d;
       }
@@ -30,6 +45,10 @@
 
     .buy {
       align-content: flex-end;
+
+      @include _769 {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -44,6 +63,10 @@
       font-size: 20px;
       color: #fff;
       margin: 0;
+
+      @include _769 {
+        font-size: 16px;
+      }
     }
 
     .supplyList {
@@ -51,6 +74,10 @@
       padding-left: 0;
       color: #fff;
       font-size: 14px;
+
+      @include _769 {
+        display: none;
+      }
 
       li {
         margin-bottom: 18px;

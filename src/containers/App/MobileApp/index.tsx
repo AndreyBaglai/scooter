@@ -30,7 +30,7 @@ const MobileApp: React.FC = () => {
 
       <img src={imgPath} alt="phone" className={styles.phone} />
 
-      <EllipseIcon className={styles.ellipse} />
+      {/* <EllipseIcon className={styles.ellipse} /> */}
     </section>
   );
 };

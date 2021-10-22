@@ -1,9 +1,15 @@
-.section {
+@import 'sources/styles/media-mixin.scss';
+
+.battery {
   background-color: #000000;
   min-height: 890px;
   z-index: 10;
   margin-bottom: 110px;
   position: relative;
+
+  @include _900 {
+    margin-bottom: 0;
+  }
 
   .title {
     display: block;
@@ -13,6 +19,14 @@
     max-width: 1200px;
     margin: 0;
     padding-top: 220px;
+
+    @include _1300 {
+      font-size: 60px;
+    }
+
+    @include _960 {
+      font-size: 40px;
+    }
   }
 
   .text {

@@ -20,7 +20,7 @@ const Speed: React.FC = () => {
         </div>
       </div>
 
-      <BottomLineIcon className={styles.bottomLine} />
+      {/* <BottomLineIcon className={styles.bottomLine} /> */}
     </section>
   );
 };

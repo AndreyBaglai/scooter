@@ -1,0 +1,9 @@
+@import 'sources/styles/media-mixin.scss';
+
+.burger {
+  display: none;
+
+  @include _769 {
+    display: block;
+  }
+}

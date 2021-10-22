@@ -36,7 +36,7 @@ const Preview: React.FC = () => {
         </ul>
       </div>
 
-      <BikeIcon className={styles.bike} />
+      {/* <BikeIcon className={styles.bike} /> */}
     </section>
   );
 };

@@ -1,3 +1,5 @@
+@import 'sources/styles/media-mixin.scss';
+
 .wrapper {
   background: #000;
   display: flex;
@@ -13,6 +15,10 @@
       font-size: 45px;
       color: #ff4c0d;
       margin: 110px 0 40px 0;
+
+      @include _769 {
+        font-size: 30px;
+      }
     }
 
     .text {
@@ -37,6 +43,14 @@
     margin-left: 90px;
     z-index: -1;
     position: relative;
+
+    @include _820 {
+      margin-left: 20px;
+    }
+
+    @include _769 {
+      max-width: 250px;
+    }
   }
 }
 

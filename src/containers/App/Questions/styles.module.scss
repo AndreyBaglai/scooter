@@ -1,3 +1,5 @@
+@import 'sources/styles/media-mixin.scss';
+
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -6,8 +8,17 @@
   z-index: 10;
   margin-bottom: 120px;
 
+  @include _769 {
+    flex-direction: column;
+  }
+
   .description {
     min-width: 50%;
+
+    @include _769 {
+      max-width: 100%;
+      margin-bottom: 78px;
+    }
 
     button:last-child {
       margin-top: 60px;
@@ -23,6 +34,10 @@
       margin: 0 0 40px 0;
       color: #ff4c0d;
       max-width: 415px;
+
+      @include _769 {
+        font-size: 30px;
+      }
     }
 
     .text {
@@ -31,6 +46,10 @@
       color: #f1f1f1;
       max-width: 312px;
       margin: 0;
+
+      @include _769 {
+        max-width: 417px;
+      }
     }
   }
 
@@ -49,6 +68,10 @@
       align-items: flex-start;
       justify-content: space-between;
       margin-bottom: 40px;
+
+      @include _769 {
+        max-width: 460px;
+      }
 
       .question {
         color: #f1f1f1;

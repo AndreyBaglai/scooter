@@ -29,7 +29,7 @@ const Brand: React.FC = () => {
         <li className={styles.circle}></li>
       </ul>
 
-      <LineIcon className={styles.bottomLine} />
+      {/* <LineIcon className={styles.bottomLine} /> */}
     </section>
   );
 };

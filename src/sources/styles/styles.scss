@@ -1,10 +1,25 @@
+@import './media-mixin.scss';
+
 body {
   font: 16px 'Gilroy', sans-serif;
   overflow-x: hidden;
   background-color: #000;
 }
 
+#root {
+  max-width: 100%;
+}
+
 .container {
   max-width: 1440px;
   padding: 0 140px;
+  box-sizing: border-box;
+
+  @include _1100 {
+    padding: 0 70px;
+  }
+
+  @include _769 {
+    padding: 0 40px;
+  }
 }

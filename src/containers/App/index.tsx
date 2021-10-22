@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Burger from 'components/Burger';
 import Button from 'components/Button';
 import Header from 'components/Header';
 import Navigation from 'components/Navigation';
@@ -23,6 +24,7 @@ const App: React.FC = () => {
         <Logo />
         <Navigation />
         <Button>Купить</Button>
+        <Burger />
       </Header>
 
       <Battery />

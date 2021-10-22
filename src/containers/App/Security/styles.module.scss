@@ -1,3 +1,5 @@
+@import 'sources/styles/media-mixin.scss';
+
 .wrapper {
   background-color: #000000;
   position: relative;
@@ -10,6 +12,10 @@
     font-size: 45px;
     color: #ff4c0d;
     max-width: 870px;
+
+    @include _769 {
+      font-size: 30px;
+    }
   }
 
   .row {
@@ -69,15 +75,28 @@
     display: flex;
     max-width: 100%;
 
+    @include _769 {
+      flex-direction: column;
+    }
+
     .bigImg {
       max-width: 70%;
+
+      @include _769 {
+        max-width: 100%;
+      }
     }
 
     .smallImg {
-      width: 360px;
+      max-width: 30%;
       height: 300px;
       margin-left: 40px;
       z-index: -2;
+
+      @include _769 {
+        max-width: 100%;
+        margin-left: 0;
+      }
     }
   }
 }

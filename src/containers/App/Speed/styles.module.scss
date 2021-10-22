@@ -1,3 +1,5 @@
+@import 'sources/styles/media-mixin.scss';
+
 .wrapper {
   background-image: url('../../../sources/images/speed-1.png');
   background-size: cover;
@@ -8,6 +10,10 @@
   z-index: 10;
   margin-bottom: 146px;
   max-width: 1440px;
+
+  @include _769 {
+    height: inherit;
+  }
 
   .topEllipse {
     position: absolute;
@@ -23,11 +29,19 @@
     padding: 120px 0;
     height: 100%;
 
+    @include _769 {
+      padding: 40px 0;
+    }
+
     .title {
       font-weight: 500;
       font-size: 45px;
       color: #f1f1f1;
       margin: 110px 0 40px 0;
+
+      @include _769 {
+        font-size: 30px;
+      }
     }
 
     .text {

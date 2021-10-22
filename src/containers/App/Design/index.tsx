@@ -42,8 +42,8 @@ const Design: React.FC = () => {
         </div>
       </div>
 
-       <BottomEllipseIcon className={styles.bottomEllipse} />
-       <LineIcon className={styles.line}/>
+       {/* <BottomEllipseIcon className={styles.bottomEllipse} />
+       <LineIcon className={styles.line}/> */}
     </section>
   );
 };

@@ -12,7 +12,7 @@ import cn from 'classnames';
 const Description: React.FC = () => {
   return (
     <section className={cn('container', styles.wrapper)}>
-      <EllipseIcon className={styles.ellipse} />
+      {/* <EllipseIcon className={styles.ellipse} /> */}
       <h2 className={styles.title}>Мощная батарея и экономичный расход заряда позволяют преодолевать расстояния до 45 км</h2>
 
       <div className={styles.row}>

@@ -1,3 +1,5 @@
+@import 'sources/styles/media-mixin.scss';
+
 .wrapper {
   background-color: #000;
   position: relative;
@@ -10,16 +12,24 @@
     color: #ff4c0d;
     margin: 0 0 70px 0;
     max-width: 740px;
+
+    @include _769 {
+      font-size: 30px;
+    }
   }
 
   .imgWrapper {
     display: flex;
     justify-content: space-between;
 
+    @include _769 {
+      flex-direction: column;
+    }
+
     .item {
       flex: 1;
       height: 550px;
-      background: #000000;
+      background: #151515;
       border-radius: 15px;
       position: relative;
 
@@ -27,8 +37,28 @@
         width: 100%;
       }
 
+      &:first-child {
+        @include _769 {
+          margin-bottom: 20px;
+        }
+
+        img {
+          @include _769 {
+            height: 67%;
+          }
+        }
+      }
+
       &:last-child {
         margin-left: 40px;
+
+        @include _769 {
+          margin-left: 0;
+        }
+
+        img {
+          height: 100%;
+        }
       }
 
       .description {
