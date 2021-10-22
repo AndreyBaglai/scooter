@@ -1,3 +1,5 @@
+@import 'sources/styles/media-mixin.scss';
+
 .footer {
   background: #222222;
   display: flex;
@@ -10,9 +12,21 @@
   max-width: 100% !important;
   margin-bottom: 0 !important;
 
+  @include _769 {
+    flex-direction: column;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+    height: inherit;
+  }
+
 
   p {
     margin: 0 0 10px 0;
+
+    @include _769 {
+      text-align: center;
+      line-height: 1.5;
+    }
   }
 
   .left {

@@ -1,6 +1,6 @@
 @import 'sources/styles/media-mixin.scss';
 
-.wrapper {
+.design {
   background-color: #000;
   position: relative;
   z-index: 10;
@@ -44,7 +44,7 @@
 
         img {
           @include _769 {
-            height: 67%;
+            height: 100%;
           }
         }
       }

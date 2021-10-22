@@ -12,7 +12,7 @@ import cn from 'classnames';
 
 const Design: React.FC = () => {
   return (
-    <section className={cn('container', styles.wrapper)}>
+    <section className={cn('container', styles.design)}>
       {/* <TopEllipseIcon className={styles.topEllipse} /> */}
 
       <h2 className={styles.title}>Лаконичный современный дизайн, в котором нет ничего лишнего</h2>

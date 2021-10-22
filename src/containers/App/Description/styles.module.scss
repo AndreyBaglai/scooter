@@ -1,6 +1,6 @@
 @import 'sources/styles/media-mixin.scss';
 
-.wrapper {
+.description {
   background-color: #000000;
   position: relative;
   z-index: 10;
@@ -16,6 +16,10 @@
     @include _960 {
       font-size: 30px;
     }
+
+    @include _769 {
+      margin-bottom: 40px;
+    }
   }
 
   .row {
@@ -23,10 +27,19 @@
     color: #f1f1f1;
     margin-bottom: 30px;
 
+    @include _769 {
+      flex-direction: column;
+    }
+
     .column {
       flex-grow: 1;
       width: 33%;
       cursor: pointer;
+
+      @include _769 {
+        width: 100%;
+        margin-bottom: 30px;
+      }
 
       .columnTitle {
         font-weight: 600;
@@ -35,6 +48,10 @@
 
         @include _1300 {
           max-width: 240px;
+        }
+
+        @include _769 {
+          max-width: 100%;
         }
       }
 
@@ -49,6 +66,19 @@
         max-width: 360px;
         line-height: 1.5;
         opacity: 0.4;
+
+        @include _769 {
+          max-width: 470px;
+        }
+      }
+
+      .columnImg {
+        display: none;
+
+        @include _769 {
+          display: block;
+          width: 100%;
+        }
       }
     }
 
@@ -70,7 +100,7 @@
     max-width: 100%;
 
     @include _769 {
-      flex-direction: column;
+      display: none;
     }
 
     .bigImg {

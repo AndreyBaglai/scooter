@@ -10,7 +10,7 @@ import cn from 'classnames';
 
 const MobileApp: React.FC = () => {
   return (
-    <section className={cn('container', styles.wrapper)}>
+    <section className={cn('container', styles.mobileApp)}>
       <div className={styles.description}>
         <h4 className={styles.title}>Мобильное приложение Mi Home</h4>
         <p className={styles.text}>
@@ -28,7 +28,7 @@ const MobileApp: React.FC = () => {
         </ul>
       </div>
 
-      <img src={imgPath} alt="phone" className={styles.phone} />
+      <div className={styles.phone}></div>
 
       {/* <EllipseIcon className={styles.ellipse} /> */}
     </section>
