@@ -1,7 +1,8 @@
 @import 'sources/styles/media-mixin.scss';
 
-.wrapper {
+.preview {
   background: #151515;
+  overflow-x: hidden;
   max-width: 1160px;
   margin: 0 auto;
   display: flex;
@@ -89,6 +90,7 @@
 .bike {
   height: 636px;
   position: absolute;
-  left: 290px;
+  left: 370px;
   top: -100px;
+  z-index: 11;
 }

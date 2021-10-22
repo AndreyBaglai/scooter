@@ -1,14 +1,13 @@
 @import 'sources/styles/media-mixin.scss';
 
-.wrapper {
+.brand {
   background-image: url('../../../sources/images/brand.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 600px;
   position: relative;
   z-index: -10;
-  margin-bottom: 120px;
+  margin: 0 auto 120px;
   max-width: 1440px;
 
   @include _769 {

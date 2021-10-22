@@ -14,6 +14,7 @@ body {
   max-width: 1440px;
   padding: 0 140px;
   box-sizing: border-box;
+  margin: 0 auto 120px;
 
   @include _1100 {
     padding: 0 70px;

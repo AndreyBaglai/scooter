@@ -1,7 +1,13 @@
 @import 'sources/styles/media-mixin.scss';
 
-.wrapper {
-  flex: 1;
+.navigation {
+  @include _1920 {
+    flex: none;
+  }
+
+  @include _1440 {
+    flex: 1; 
+  }
 
   @include _900 {
     flex: none;
@@ -16,7 +22,15 @@
   list-style: none;
   padding-left: 0;
   display: flex;
-  margin-left: 80px;
+  
+
+  @include _1920 {
+    margin-left: 0;
+  }
+
+  @include _1440 {
+    margin-left: 80px;
+  }
 
   @include _900 {
     margin-left: 0;

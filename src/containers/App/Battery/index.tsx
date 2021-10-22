@@ -4,7 +4,7 @@ import ToggleTheme from 'components/ToggleTheme';
 
 import { ReactComponent as BikeIcon } from 'sources/icons/header-bike.svg';
 import { ReactComponent as EllipseIcon } from 'sources/icons/ellipses/header.svg';
-
+import imgPath from '../../../sources/images/header-bike.png';
 
 import styles from './styles.module.scss';
 import cn from 'classnames';
@@ -18,6 +18,8 @@ const Battery: React.FC = () => {
         выглядит.
       </span>
       <ToggleTheme />
+
+      <img src={imgPath} alt="bike" className={styles.bike} />
 
       {/* <EllipseIcon className={styles.ellipse} /> */}
       {/* <BikeIcon className={styles.bike} /> */}

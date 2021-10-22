@@ -9,7 +9,7 @@ import styles from './styles.module.scss';
 
 const Speed: React.FC = () => {
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.speed}>
       {/* <TopEllipseIcon className={styles.topEllipse} /> */}
 
       <div className="container">

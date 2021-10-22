@@ -4,12 +4,13 @@ import Button from 'components/Button';
 import ToggleTheme from 'components/ToggleTheme';
 
 import { ReactComponent as BikeIcon } from 'sources/icons/footer-bike.svg';
+import imgPath from '../../../sources/images/footer-bike.png';
 
 import styles from './styles.module.scss';
 
 const Preview: React.FC = () => {
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.preview}>
       <div className={styles.description}>
         <div>
           <h2 className={styles.title}>
@@ -36,6 +37,7 @@ const Preview: React.FC = () => {
         </ul>
       </div>
 
+      <img src={imgPath} alt="bike" className={styles.bike} />
       {/* <BikeIcon className={styles.bike} /> */}
     </section>
   );

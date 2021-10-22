@@ -8,7 +8,7 @@ import styles from './styles.module.scss';
 
 const Brand: React.FC = () => {
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.brand}>
       <div className="container">
         <div className={styles.content}>
           <Logo />

@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 
 const Navigation = () => {
   return (
-    <nav className={styles.wrapper}>
+    <nav className={styles.navigation}>
       <ul className={styles.nav}> 
         <li>
           <a className={styles.link} href="/#">О продукте</a>
