@@ -10,7 +10,7 @@ import cn from 'classnames';
 
 const Reviews: React.FC = () => {
   return (
-    <section className={cn('container', styles.wrapper)}>
+    <section className={cn('container', styles.reviews)}>
       <h2 className={styles.title}>Отзывы о Mi Scooter Pro 2</h2>
       <div className={styles.slider}>
         <div className={styles.slide}>
@@ -35,11 +35,13 @@ const Reviews: React.FC = () => {
             недостатков m365:
           </p>
           <p className={styles.innerText}>- усилен узел складывания и язычок </p>
-            <p className={styles.innerText}>
-              - батарея находится в отдельном жёстком алюминиевом корпусе, что исключает её поломку
-              из-за тряски{' '}
-            </p>
-            <p className={styles.innerText}>- установлена поддержка заднего крыла и защита провода заднего габарита.</p>
+          <p className={styles.innerText}>
+            - батарея находится в отдельном жёстком алюминиевом корпусе, что исключает её поломку
+            из-за тряски{' '}
+          </p>
+          <p className={styles.innerText}>
+            - установлена поддержка заднего крыла и защита провода заднего габарита.
+          </p>
         </div>
 
         <div className={styles.slide}>
@@ -58,6 +60,12 @@ const Reviews: React.FC = () => {
       </div>
 
       <div className={styles.controls}>
+        <ul className={styles.horizontalCircles}>
+          <li className={styles.circle}></li>
+          <li className={styles.circle}></li>
+          <li className={styles.circle}></li>
+        </ul>
+        
         <Button>Оставить отзыв</Button>
         <div className={styles.arrowsWrapper}>
           <LeftArrowIcon className={styles.leftArrow} />

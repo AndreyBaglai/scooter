@@ -18,6 +18,16 @@
     padding: 40px 60px;
   }
 
+  @include _620 {
+    height: 666px;
+    padding: 25px 30px;
+    max-width: 90%;
+  }
+
+  @include _375 {
+    height: 600px;
+  }
+
   .description {
     display: flex;
     flex-direction: column;
@@ -40,6 +50,10 @@
         max-width: 300px;
       }
 
+      @include _620 {
+        font-size: 25px;
+      }
+
       .price {
         color: #ff4c0d;
       }
@@ -60,7 +74,7 @@
     align-items: flex-start;
     margin-top: 4px;
 
-    .title {
+    .subTitle {
       font-weight: 600;
       font-size: 20px;
       color: #fff;
@@ -68,6 +82,10 @@
 
       @include _769 {
         font-size: 16px;
+      }
+
+      @include _375 {
+        margin: 0 auto;
       }
     }
 
@@ -105,5 +123,16 @@
 
   @include _769 {
     left: 75px;
+  }
+
+  @include _620 {
+    height: 324px;
+    top: 203px;
+    left: 0;
+  }
+
+  @include _375 {
+    height: 250px;
+    left: -36px;
   }
 }

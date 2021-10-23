@@ -25,7 +25,7 @@ const Preview: React.FC = () => {
       </div>
 
       <div className={styles.supplyWrapper}>
-        <h4 className={styles.title}>Комплект поставки</h4>
+        <h4 className={styles.subTitle}>Комплект поставки</h4>
         <ul className={styles.supplyList}>
           <li>Адаптер питания</li>
           <li>Шестигранный ключ</li>

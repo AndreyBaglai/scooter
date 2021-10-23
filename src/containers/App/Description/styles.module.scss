@@ -20,6 +20,10 @@
     @include _769 {
       margin-bottom: 40px;
     }
+
+    @include _620 {
+      font-size: 25px;
+    }
   }
 
   .row {
@@ -53,6 +57,10 @@
         @include _769 {
           max-width: 100%;
         }
+
+        @include _620 {
+          font-size: 16px;
+        }
       }
 
       .line {
@@ -69,6 +77,10 @@
 
         @include _769 {
           max-width: 470px;
+        }
+
+        @include _620 {
+          font-size: 12px;
         }
       }
 

@@ -1,3 +1,5 @@
+@import 'sources/styles/media-mixin.scss';
+
 .btn {
   padding: 15px 35px;
   min-width: 122px;
@@ -10,6 +12,10 @@
   font-weight: bold;
   transition: all 0.5s ease;
   cursor: pointer;
+
+  @include _375 {
+    width: 100%;
+  }
 
   &:hover {
     background-color: #FF4C0D;

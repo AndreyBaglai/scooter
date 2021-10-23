@@ -15,7 +15,7 @@ body {
   max-width: 1440px;
   padding: 0 140px;
   box-sizing: border-box;
-  margin: 0 auto 120px;
+  margin: 0 auto 50px;
 
   @include _1100 {
     padding: 0 70px;
@@ -23,5 +23,9 @@ body {
 
   @include _769 {
     padding: 0 40px;
+  }
+
+  @include _620 {
+    padding: 0 20px;
   }
 }

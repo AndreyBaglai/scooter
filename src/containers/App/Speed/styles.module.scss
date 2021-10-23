@@ -14,6 +14,10 @@
     height: inherit;
   }
 
+  @include _620 {
+    margin-bottom: 0 !important;
+  }
+
   .topEllipse {
     position: absolute;
     top: -419px;
@@ -41,6 +45,11 @@
       @include _769 {
         font-size: 30px;
       }
+
+      @include _620 {
+        font-size: 25px;
+        margin-top: 220px;
+      }
     }
 
     .text {
@@ -50,6 +59,10 @@
       max-width: 285px;
       margin: 0;
       line-height: 1.5;
+
+      @include _620 {
+        font-size: 12px;
+      }
     }
   }
 }

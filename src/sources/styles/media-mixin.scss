@@ -43,3 +43,8 @@
     @content;
   }
 }
+@mixin _375 {
+  @media (max-width: 375px) {
+    @content;
+  }
+}

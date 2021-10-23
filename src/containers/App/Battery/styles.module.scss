@@ -12,6 +12,10 @@
     margin-bottom: 0;
   }
 
+  @include _620 {
+    margin-bottom: 0 !important;
+  }
+
   .title {
     display: block;
     font-weight: 600;
@@ -28,6 +32,15 @@
     @include _960 {
       font-size: 40px;
     }
+
+    @include _620 {
+      padding-top: 510px;
+      font-size: 30px;
+    }
+
+    @include _375 {
+      padding-top: 369px;
+    }
   }
 
   .text {
@@ -42,6 +55,10 @@
     @include _769 {
       font-size: 20px;
       max-width: 320px;
+    }
+
+    @include _620 {
+      font-size: 16px;
     }
   }
 }
@@ -65,5 +82,15 @@
 
   @include _900 {
     right: -350px;
+  }
+
+  @include _620 {
+    right: -50px;
+    height: 550px;
+  }
+
+  @include _375 {
+    right: -46px;
+    height: 375px;
   }
 }
