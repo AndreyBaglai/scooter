@@ -22,7 +22,7 @@ const Security: React.FC = () => {
       <h2 className={styles.title}>Заботится о вашей безопасности</h2>
 
       <div className={styles.row}>
-        <div className={cn(styles.column, styles.active)}>
+        <div className={styles.column}>
           <h4 className={styles.columnTitle}>Яркие ходовые огни</h4>
           <div className={styles.line}></div>
           <p className={styles.text}>

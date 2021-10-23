@@ -18,7 +18,7 @@ const Description: React.FC = () => {
       <h2 className={styles.title}>Мощная батарея и экономичный расход заряда позволяют преодолевать расстояния до 45 км</h2>
 
       <div className={styles.row}>
-        <div className={cn(styles.column, styles.active)}>
+        <div className={styles.column}>
           <h4 className={styles.columnTitle}>Три режима скорости</h4>
           <div className={styles.line}></div>
           <p className={styles.text}>

@@ -6,7 +6,7 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  z-index: -10;
+  z-index: 10;
   margin: 0 auto 170px;
   max-width: 1440px;
 
@@ -75,13 +75,21 @@
   }
 }
 
-.circlesWrapper {
+.verticalCircles {
   position: absolute;
   right: 140px;
   top: 50%;
   transform: translateY(-50%);
   list-style: none;
   padding-left: 0;
+
+  @include _820 {
+    right: 100px;
+  }
+
+  @include _769 {
+    right: 70px;
+  }
 
   @include _620 {
     display: none;
@@ -95,6 +103,11 @@
     margin-bottom: 30px;
     border-radius: 100%;
     cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -105,6 +118,15 @@
   width: 90px;
   justify-content: space-between;
   margin: 0 auto;
+   
+  @include _620 {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  @include _375 {
+    margin-top: 0;
+  }
 
   .circle {
     width: 10px;
@@ -114,10 +136,11 @@
     margin-bottom: 30px;
     border-radius: 100%;
     cursor: pointer;
-  }
+    transition: all 0.5s ease;
 
-  @include _620 {
-    display: flex;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 

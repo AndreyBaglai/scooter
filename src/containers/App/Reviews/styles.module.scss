@@ -134,6 +134,11 @@
     opacity: 0.2;
     border-radius: 100%;
     cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   @include _620 {

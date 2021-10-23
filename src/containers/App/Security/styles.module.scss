@@ -41,6 +41,18 @@
       width: 33%;
       cursor: pointer;
 
+      &:hover {
+        .line {
+          background: #ff4c0d;
+        }
+
+        .line,
+        .text,
+        .columnTitle {
+          opacity: 1;
+        }
+      }
+
       @include _769 {
         width: 100%;
         margin-bottom: 28px;
@@ -53,6 +65,7 @@
         opacity: 0.4;
         max-width: 160px;
         margin: 0 0 18px 0;
+        transition: all 0.5s ease;
 
         @include _769 {
           max-width: 100%;
@@ -68,6 +81,7 @@
         width: 100%;
         background: #f1f1f1;
         opacity: 0.4;
+        transition: all 0.5s ease;
       }
 
       .text {
@@ -77,6 +91,7 @@
         opacity: 0.4;
         line-height: 1.5;
         max-width: 260px;
+        transition: all 0.5s ease;
 
         @include _769 {
           max-width: 100%;
