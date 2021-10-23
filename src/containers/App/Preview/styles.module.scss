@@ -128,7 +128,7 @@
   @include _620 {
     height: 324px;
     top: 203px;
-    left: 0;
+    left: calc(100% - 426px);
   }
 
   @include _375 {

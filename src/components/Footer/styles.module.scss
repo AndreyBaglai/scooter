@@ -19,13 +19,16 @@
     height: inherit;
   }
 
-
   p {
     margin: 0 0 10px 0;
 
     @include _769 {
       text-align: center;
       line-height: 1.5;
+    }
+
+    @include _620 {
+      font-size: 12px;
     }
   }
 

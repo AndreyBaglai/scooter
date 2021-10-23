@@ -26,4 +26,9 @@
 .orange {
   background-color: #FF4C0D;
   color: #fff;
+
+  &:hover {
+    background: #f1f1f1;
+    color: #151515;
+  }
 }

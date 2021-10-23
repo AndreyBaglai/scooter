@@ -83,6 +83,14 @@
       flex-direction: column;
     }
 
+    button {
+      max-width: 190px;
+
+      @include _375 {
+        max-width: 100%;
+      }
+    }
+
     .leftArrow {
       margin-right: 18px;
     }
