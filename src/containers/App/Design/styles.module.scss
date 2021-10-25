@@ -1,10 +1,11 @@
 @import 'sources/styles/media-mixin.scss';
 
 .design {
-  background-color: #000;
+  background-color: var(--page-background);
   position: relative;
   z-index: 10;
   margin-bottom: 120px;
+  transition: all 0.5s ease;
 
   @include _620 {
     margin-bottom: 200px !important;
@@ -13,7 +14,7 @@
   .title {
     font-weight: 500;
     font-size: 45px;
-    color: #ff4c0d;
+    color: var(--title-color);
     margin: 0 0 70px 0;
     max-width: 740px;
 
@@ -110,6 +111,7 @@
 
           @include _620 {
             font-size: 16px;
+            color: var(--text-color);
           }
         }
 
@@ -121,6 +123,7 @@
 
           @include _620 {
             font-size: 12px;
+            color: var(--text-color);
           }
         }
       }

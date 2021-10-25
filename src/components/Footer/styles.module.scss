@@ -1,11 +1,11 @@
 @import 'sources/styles/media-mixin.scss';
 
 .footer {
-  background: #222222;
+  background: var(--footer-background);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #f1f1f1;
+  color: var(--text-color);
   font-weight: normal;
   font-size: 14px;
   height: 172px;

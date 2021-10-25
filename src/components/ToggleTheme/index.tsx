@@ -15,14 +15,16 @@ const ToggleTheme: React.FC = observer(() => {
 
   useEffect(() => {
     const themeFromLS = localStorage.getItem('theme');
-    // themeFromLS && themeStore.changeTheme(themeFromLS);
+    themeFromLS && themeStore.changeTheme(themeFromLS);
 
-    // if (themeFromLS === 'dark') {
-    //   document.body.classList.add('dark');
-
-    //   // const toggleThumbs: HTMLElement[] = getToggleThumbs();
-    //   // toggleThumbs.forEach((thumb: HTMLElement) => (thumb.style.left = '8px'));
-    // }
+    if (themeFromLS === 'light') {
+      const toggleThumbs: HTMLElement[] = getElementsByDataAttr('data-thumb="thumb"');
+      const lightTextElements = getElementsByDataAttr('data-light="light"');
+      toggleThumbs.forEach((thumb: HTMLElement) => (thumb.style.right = '115px'));
+      lightTextElements.forEach((el: HTMLElement) => (el.style.color = '#f1f1f1'));
+    } else {
+      document.body.classList.add('dark');
+    }
   }, [theme]);
 
   const onToggleTheme = () => {
@@ -32,6 +34,8 @@ const ToggleTheme: React.FC = observer(() => {
 
     document.body.classList.toggle('dark');
 
+    // console.log(theme);
+
     if (theme === 'light') {
       themeStore.changeTheme('dark');
       localStorage.setItem('theme', 'dark');
@@ -39,13 +43,13 @@ const ToggleTheme: React.FC = observer(() => {
 
       lightTextElements.forEach((el: HTMLElement) => (el.style.color = '#f1f1f1'));
       darkTextElements.forEach((el: HTMLElement) => (el.style.color = '#000'));
-    } else {
+    } else if (theme === 'dark') {
       themeStore.changeTheme('light');
       localStorage.setItem('theme', 'light');
       toggleThumbs.forEach((thumb: HTMLElement) => (thumb.style.right = '115px'));
 
-      lightTextElements.forEach((el: HTMLElement) => (el.style.color = '#000'));
-      darkTextElements.forEach((el: HTMLElement) => (el.style.color = '#f1f1f1'));
+      lightTextElements.forEach((el: HTMLElement) => (el.style.color = '#f1f1f1'));
+      darkTextElements.forEach((el: HTMLElement) => (el.style.color = '#000'));
     }
   };
 

@@ -68,7 +68,7 @@
 
         @include _620 {
           font-size: 12px;
-          color: #f1f1f1;
+          color: var(--text-color);
         }
       }
     }

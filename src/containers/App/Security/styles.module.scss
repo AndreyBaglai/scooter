@@ -1,10 +1,11 @@
 @import 'sources/styles/media-mixin.scss';
 
 .security {
-  background-color: #000000;
+  background-color: var(--page-background);
   position: relative;
   z-index: 9;
   margin-bottom: 120px;
+  transition: all 0.5s ease;
 
   @include _620 {
     margin-bottom: 0 !important;
@@ -14,7 +15,7 @@
     margin: 0 0 60px 0;
     font-weight: 500;
     font-size: 45px;
-    color: #ff4c0d;
+    color: var(--title-color);
     max-width: 870px;
 
     @include _769 {
@@ -29,7 +30,7 @@
 
   .row {
     display: flex;
-    color: #f1f1f1;
+    color: var(--text-color);
     margin-bottom: 30px;
 
     @include _769 {
@@ -61,7 +62,7 @@
       .columnTitle {
         font-weight: 600;
         font-size: 20px;
-        color: #f1f1f1;
+        color: var(--text-color);
         opacity: 0.4;
         max-width: 160px;
         margin: 0 0 18px 0;
@@ -79,7 +80,7 @@
       .line {
         height: 3px;
         width: 100%;
-        background: #f1f1f1;
+        background: var(--text-color);
         opacity: 0.4;
         transition: all 0.5s ease;
       }
@@ -87,7 +88,7 @@
       .text {
         font-weight: normal;
         font-size: 14px;
-        color: #f1f1f1;
+        color: var(--text-color);
         opacity: 0.4;
         line-height: 1.5;
         max-width: 260px;

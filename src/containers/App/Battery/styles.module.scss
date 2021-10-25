@@ -1,12 +1,13 @@
 @import 'sources/styles/media-mixin.scss';
 
 .battery {
-  background-color: #000000;
+  background-color: var(--page-background);
   min-height: 800px;
   z-index: 10;
   margin-bottom: 110px;
   position: relative;
   overflow: hidden;
+  transition: all 0.5s ease;
 
   @include _900 {
     margin-bottom: 0;
@@ -20,7 +21,7 @@
     display: block;
     font-weight: 600;
     font-size: 80px;
-    color: #f1f1f1;
+    color: var(--title-color);
     max-width: 1200px;
     margin: 0;
     padding-top: 220px;
@@ -47,7 +48,7 @@
     display: block;
     font-weight: 600;
     font-size: 30px;
-    color: #ff4c0d;
+    color: var(--text-color);
     max-width: 500px;
     text-align: left;
     margin: 30px 0 60px;

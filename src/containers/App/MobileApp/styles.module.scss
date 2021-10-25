@@ -1,11 +1,12 @@
 @import 'sources/styles/media-mixin.scss';
 
 .mobileApp {
-  background: #000;
+  background-color: var(--page-background);
   display: flex;
   position: relative;
   z-index: 8;
   margin-bottom: 0 !important;
+  transition: all 0.5s ease;
 
   @include _620 {
     flex-direction: column;
@@ -35,7 +36,7 @@
       max-width: 320px;
       font-weight: normal;
       font-size: 14px;
-      color: #f1f1f1;
+      color: var(--text-color);
       margin: 0 0 60px 0;
       line-height: 1.5;
 
@@ -61,7 +62,7 @@
   }
 
   .phone {
-    background-image: url('../../../sources/images/phone.png');
+    background-image: var(--mobile-imgPath);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;

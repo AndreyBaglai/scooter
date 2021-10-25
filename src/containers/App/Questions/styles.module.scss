@@ -1,12 +1,13 @@
 @import 'sources/styles/media-mixin.scss';
 
-.wrapper {
+.questions {
   display: flex;
   justify-content: space-between;
-  background: #000;
+  background-color: var(--page-background);
   position: relative;
   z-index: 10;
   margin-bottom: 120px;
+  transition: all 0.5s ease;
 
   @include _769 {
     flex-direction: column;
@@ -47,7 +48,7 @@
     .text {
       font-weight: normal;
       font-size: 14px;
-      color: #f1f1f1;
+      color: var(--text-color);
       max-width: 312px;
       margin: 0;
 
@@ -82,7 +83,7 @@
       }
 
       .question {
-        color: #f1f1f1;
+        color: var(--text-color);
         font-weight: 600;
         font-size: 20px;
         margin: 0;
@@ -100,7 +101,7 @@
       }
 
       .answer {
-        color: #f1f1f1;
+        color: var(--text-color);
         font-weight: normal;
         font-size: 14px;
         margin-top: 16px;

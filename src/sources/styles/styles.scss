@@ -1,9 +1,40 @@
+@import './dark-theme-variables.scss';
+@import './light-theme-variables.scss';
 @import './media-mixin.scss';
+
+:root {
+  --page-background: #{$light-page-bg};
+  --title-color: #{$light-title};
+  --toggle-color: #{$light-toggle-thumb};
+  --logo-color: #{$light-logo};
+  --nav-link-color: #{$light-nav-link};
+  --preview-section-background: #{$light-preview-section};
+  --footer-background: #{$light-footer-bg};
+  --text-color: #{$light-text};
+  --review-item-background: #{$light-review-item-bg};
+  --review-line-background: #{$light-review-line};
+  --mobile-imgPath: url('../images/light-phone.png');
+}
+
+.dark {
+  --page-background: #{$dark-page-bg};
+  --title-color: #{$dark-title};
+  --toggle-color: #{$dark-toggle-thumb};
+  --logo-color: #{$dark-logo};
+  --nav-link-color: #{$dark-nav-link};
+  --preview-section-background: #{$dark-preview-section};
+  --footer-background: #{$dark-footer-bg};
+  --text-color: #{$dark-text};
+  --review-item-background: #{$dark-review-item-bg};
+  --review-line-background: #{$dark-review-line};
+  --mobile-imgPath: url('../images/dark-phone.png');
+}
 
 body {
   font: 16px 'Gilroy', sans-serif;
   overflow-x: hidden;
-  background-color: #000;
+  transition: all 0.5s ease;
+  background-color: var(--page-background);
 }
 
 #root {

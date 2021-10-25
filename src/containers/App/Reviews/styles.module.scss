@@ -3,6 +3,8 @@
 .reviews {
   overflow-x: hidden;
   margin-bottom: 120px;
+  background-color: var(--page-background);
+  transition: all 0.5s ease;
 
   .title {
     font-weight: 500;
@@ -25,7 +27,7 @@
     margin-bottom: 24px;
 
     .slide {
-      background: #151515;
+      background: var(--review-item-background);
       border-radius: 15px;
       padding: 28px;
       margin-right: 40px;
@@ -38,7 +40,7 @@
       }
 
       .name {
-        color: #f1f1f1;
+        color: var(--text-color);
         font-weight: 600;
         font-size: 20px;
         margin: 0 0 14px 0;
@@ -51,11 +53,11 @@
       .orangeLine {
         width: 100px;
         height: 3px;
-        background: #ff4c0d;
+        background: var(--review-line-background);
       }
 
       .text {
-        color: #f1f1f1;
+        color: var(--text-color);
         font-weight: normal;
         font-size: 14px;
         line-height: 1.5;

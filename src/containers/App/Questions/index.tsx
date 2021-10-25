@@ -13,7 +13,7 @@ import cn from 'classnames';
 const Questions: React.FC = ({ children }) => {
   return (
     <>
-      <section className={cn('container', styles.wrapper)}>
+      <section className={cn('container', styles.questions)}>
         {/* <EllipseIcon className={styles.ellipse} /> */}
         {/* <LineIcon className={styles.lineIcon} /> */}
 

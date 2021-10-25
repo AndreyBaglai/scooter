@@ -10,6 +10,7 @@ interface IProps {
 }
 
 const _Logo: React.FC<IProps> = ({ isOrange }) => {
+
   return <Logo className={cn(styles.logo, { [styles.orange]: isOrange })} />
 };
 

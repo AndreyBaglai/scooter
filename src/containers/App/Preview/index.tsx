@@ -1,14 +1,21 @@
 import React from 'react';
+import { observer } from 'mobx-react-lite';
+
+import { useStore } from 'stores';
 
 import Button from 'components/Button';
 import ToggleTheme from 'components/ToggleTheme';
 
 import { ReactComponent as BikeIcon } from 'sources/icons/footer-bike.svg';
-import imgPath from '../../../sources/images/footer-bike.png';
+import darkBikeSrc from '../../../sources/images/dark-footer-bike.png';
+import lightBikeSrc from '../../../sources/images/light-footer-bike.png';
 
 import styles from './styles.module.scss';
 
-const Preview: React.FC = () => {
+const Preview: React.FC = observer(() => {
+  const { themeStore } = useStore();
+  const { theme } = themeStore;
+
   return (
     <section className={styles.preview}>
       <div className={styles.description}>
@@ -37,10 +44,10 @@ const Preview: React.FC = () => {
         </ul>
       </div>
 
-      <img src={imgPath} alt="bike" className={styles.bike} />
+      <img src={theme === 'dark' ? darkBikeSrc : lightBikeSrc} alt="bike" className={styles.bike} />
       {/* <BikeIcon className={styles.bike} /> */}
     </section>
   );
-};
+});
 
 export default Preview;
