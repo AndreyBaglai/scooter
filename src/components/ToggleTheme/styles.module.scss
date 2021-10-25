@@ -5,19 +5,18 @@
   border: 3px solid #f1f1f1;
   border-radius: 108px;
   z-index: 10;
+  position: relative;
 
   @include _375 {
-    width: 100%;
+    margin: 0 auto;
   }
 
-  .white,
-  .black {
+  .light,
+  .dark {
     display: inline-block;
     text-align: center; 
     padding: 15px 20px;
-    border-radius: 108px;
     cursor: pointer;
-    transition: all 0.5s ease;
     width: 32%;
     font-size: 16px;
     font-weight: bold;
@@ -25,12 +24,24 @@
     position: relative;
   }
 
-  .black {  
-    left: 10px;
+  .light {  
+    color: #000;
   }
 
-  .active {
+  // .active {
+  //   background: #f1f1f1;
+  //   color: #000;
+  // }
+
+  .thumb {
+    display: block;
+    position: absolute;
+    right: 115px;
+    top: 0;
+    transition: all 0.5s ease;
+    border-radius: 108px;
+    width: 135px;
     background: #f1f1f1;
-    color: #000;
+    height: 50px;
   }
 }
