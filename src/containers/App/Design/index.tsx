@@ -4,7 +4,6 @@ import imgPath1 from '../../../sources/images/modern-design-1.png';
 import imgPath2 from '../../../sources/images/modern-design-2.png';
 
 import topEllipseSrc from '../../../sources/images/ellipses/top-design.png';
-import bottomEllipseSrc from '../../../sources/images/ellipses/bottom-design.png';
 import lineSrc from '../../../sources/images/lines/design.png';
 
 import styles from './styles.module.scss';
@@ -42,7 +41,6 @@ const Design: React.FC = () => {
         </div>
       </div>
 
-       <img src={bottomEllipseSrc} className={styles.bottomEllipse} alt="bottom ellipse" />
        <img src={lineSrc} className={styles.line} alt="line" />
     </section>
   );

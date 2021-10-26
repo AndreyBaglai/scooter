@@ -3,9 +3,8 @@ import React from 'react';
 import Button from 'components/Button';
 import Preview from '../Preview';
 
-import leftEllipseSrc from 'sources/images/ellipses/left-questions.png';
 import rightEllipseSrc from 'sources/images/ellipses/right-questions.png';
-import leftLineSrc from 'sources/images/lines/questions.png';
+import lineSrc from 'sources/images/lines/questions.png';
 
 import styles from './styles.module.scss';
 import cn from 'classnames';
@@ -14,10 +13,9 @@ const Questions: React.FC = () => {
   return (
     <>
       <section className={cn('container', styles.questions)}>
-        <img src={leftEllipseSrc} className={styles.leftEllipse} alt="left ellipse" />
         <img src={rightEllipseSrc} className={styles.rightEllipse} alt="right ellipse" />
 
-        <img src={leftLineSrc} className={styles.lineIcon} alt="line" />
+        <img src={lineSrc} className={styles.lineIcon} alt="line" />
 
         <div className={styles.description}>
           <div className={styles.title}>Часто задаваемые вопросы</div>

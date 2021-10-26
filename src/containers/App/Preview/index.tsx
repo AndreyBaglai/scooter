@@ -45,7 +45,6 @@ const Preview: React.FC = observer(() => {
       </div>
 
       <img src={theme === 'dark' ? darkBikeSrc : lightBikeSrc} alt="bike" className={styles.bike} />
-      {/* <BikeIcon className={styles.bike} /> */}
     </section>
   );
 });

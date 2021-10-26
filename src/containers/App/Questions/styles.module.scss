@@ -135,4 +135,10 @@
   top: 438px;
   z-index: -1;
   transform: scale(1.1);
+
+  @include _769 {
+    left: 201px;
+    top: 468px;
+    transform: scale(1.1) rotate(45deg);
+  }
 }

@@ -6,16 +6,12 @@ import imgSrc3 from '../../../sources/images/security-brake.png';
 import imgSrc4 from '../../../sources/images/security-backlight.png';
 import imgSrc5 from '../../../sources/images/security-reflection.png';
 
-import leftEllipseSrc from '../../../sources/images/ellipses/left-security.png';
-
 import styles from './styles.module.scss';
 import cn from 'classnames';
 
 const Security: React.FC = () => {
   return (
     <section className={cn('container', styles.security)}>
-      <img src={leftEllipseSrc} className={styles.leftEllipse} alt="left ellipse" />
-
       <h2 className={styles.title}>Заботится о вашей безопасности</h2>
 
       <div className={styles.row}>
