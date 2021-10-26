@@ -3,6 +3,7 @@ import React from 'react';
 import Logo from 'components/Logo';
 
 import { ReactComponent as LineIcon } from 'sources/icons/lines/brand.svg';
+import lineSrc from '../../../sources/images/lines/brand.png';
 
 import styles from './styles.module.scss';
 
@@ -37,7 +38,7 @@ const Brand: React.FC = () => {
         </ul>
       </div>
 
-      {/* <LineIcon className={styles.bottomLine} /> */}
+      <img src={lineSrc} className={styles.line} alt="line" />
     </section>
   );
 };

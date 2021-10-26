@@ -2,14 +2,11 @@ import React from 'react';
 
 import imgSrc1 from '../../../sources/images/security-1.png';
 import imgSrc2 from '../../../sources/images/security-2.png';
-
 import imgSrc3 from '../../../sources/images/security-brake.png';
 import imgSrc4 from '../../../sources/images/security-backlight.png';
 import imgSrc5 from '../../../sources/images/security-reflection.png';
 
-import { ReactComponent as LineIcon } from 'sources/icons/lines/security.svg';
-import { ReactComponent as LeftEllipseIcon } from 'sources/icons/ellipses/security-left.svg';
-import { ReactComponent as RightEllipseIcon } from 'sources/icons/ellipses/security-right.svg';
+import leftEllipseSrc from '../../../sources/images/ellipses/left-security.png';
 
 import styles from './styles.module.scss';
 import cn from 'classnames';
@@ -17,7 +14,7 @@ import cn from 'classnames';
 const Security: React.FC = () => {
   return (
     <section className={cn('container', styles.security)}>
-      {/* <LeftEllipseIcon className={styles.leftEllipse} /> */}
+      <img src={leftEllipseSrc} className={styles.leftEllipse} alt="left ellipse" />
 
       <h2 className={styles.title}>Заботится о вашей безопасности</h2>
 
@@ -66,9 +63,6 @@ const Security: React.FC = () => {
         <img src={imgSrc1} alt="power1" className={styles.bigImg} />
         <img src={imgSrc2} alt="power2" className={styles.smallImg} />
       </div>
-
-      {/* <RightEllipseIcon className={styles.rightEllipse} /> */}
-      {/* <LineIcon className={styles.bottomLine} /> */}
     </section>
   );
 };

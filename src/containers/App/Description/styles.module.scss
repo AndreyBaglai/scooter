@@ -153,16 +153,9 @@
   }
 }
 
-.ellipse {
-  position: absolute;
-  left: 0;
-  top: -350px;
-  z-index: -1;
-}
-
 .bottomLine {
   position: absolute;
   bottom: -151px;
-  left: 63px;
+  right: 0;
   z-index: -1;
 }

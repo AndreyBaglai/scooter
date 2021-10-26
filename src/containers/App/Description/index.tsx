@@ -5,8 +5,7 @@ import imgSrc2 from '../../../sources/images/description-2.png';
 import imgSrc3 from '../../../sources/images/description-3.png';
 import imgSrc4 from '../../../sources/images/description-4.png';
 
-import { ReactComponent as EllipseIcon } from 'sources/icons/ellipses/description.svg';
-import { ReactComponent as BottomLineIcon } from 'sources/icons/lines/description.svg';
+import lineSrc from '../../../sources/images/lines/description.png';
 
 import styles from './styles.module.scss';
 import cn from 'classnames';
@@ -14,7 +13,6 @@ import cn from 'classnames';
 const Description: React.FC = () => {
   return (
     <section className={cn('container', styles.description)}>
-      {/* <EllipseIcon className={styles.ellipse} /> */}
       <h2 className={styles.title}>Мощная батарея и экономичный расход заряда позволяют преодолевать расстояния до 45 км</h2>
 
       <div className={styles.row}>
@@ -55,7 +53,7 @@ const Description: React.FC = () => {
         <img src={imgSrc2} alt="power2" className={styles.smallImg}/>
       </div>
 
-      {/* <BottomLineIcon className={styles.bottomLine} /> */}
+      <img src={lineSrc} className={styles.bottomLine} alt="line" />
     </section>
   );
 };

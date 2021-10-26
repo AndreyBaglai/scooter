@@ -3,19 +3,21 @@ import React from 'react';
 import Button from 'components/Button';
 import Preview from '../Preview';
 
-import { ReactComponent as EllipseIcon } from 'sources/icons/ellipses/questions.svg';
-
-import { ReactComponent as LineIcon } from 'sources/icons/lines/questions.svg';
+import leftEllipseSrc from 'sources/images/ellipses/left-questions.png';
+import rightEllipseSrc from 'sources/images/ellipses/right-questions.png';
+import leftLineSrc from 'sources/images/lines/questions.png';
 
 import styles from './styles.module.scss';
 import cn from 'classnames';
 
-const Questions: React.FC = ({ children }) => {
+const Questions: React.FC = () => {
   return (
     <>
       <section className={cn('container', styles.questions)}>
-        {/* <EllipseIcon className={styles.ellipse} /> */}
-        {/* <LineIcon className={styles.lineIcon} /> */}
+        <img src={leftEllipseSrc} className={styles.leftEllipse} alt="left ellipse" />
+        <img src={rightEllipseSrc} className={styles.rightEllipse} alt="right ellipse" />
+
+        <img src={leftLineSrc} className={styles.lineIcon} alt="line" />
 
         <div className={styles.description}>
           <div className={styles.title}>Часто задаваемые вопросы</div>

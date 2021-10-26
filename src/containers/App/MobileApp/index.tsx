@@ -1,9 +1,9 @@
 import React from 'react';
 
-import imgPath from 'sources/images/phone.png';
 import { ReactComponent as AppleIcon } from 'sources/icons/apple.svg';
 import { ReactComponent as GoogleIcon } from 'sources/icons/google.svg';
-import { ReactComponent as EllipseIcon } from 'sources/icons/ellipses/mobile-app.svg';
+
+import topEllipseSrc from '../../../sources/images/ellipses/top-mobile-app.png';
 
 import styles from './styles.module.scss';
 import cn from 'classnames';
@@ -11,6 +11,8 @@ import cn from 'classnames';
 const MobileApp: React.FC = () => {
   return (
     <section className={cn('container', styles.mobileApp)}>
+      <img src={topEllipseSrc} alt="top ellipse" className={styles.topEllipse} />
+
       <div className={styles.description}>
         <h4 className={styles.title}>Мобильное приложение Mi Home</h4>
         <p className={styles.text}>
@@ -29,8 +31,6 @@ const MobileApp: React.FC = () => {
       </div>
 
       <div className={styles.phone}></div>
-
-      {/* <EllipseIcon className={styles.ellipse} /> */}
     </section>
   );
 };

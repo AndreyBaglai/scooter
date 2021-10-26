@@ -18,13 +18,6 @@
     margin-bottom: 0 !important;
   }
 
-  .topEllipse {
-    position: absolute;
-    top: -419px;
-    right: -24px;
-    z-index: -1;
-  }
-
   .content {
     max-width: 388px;
     display: flex;
@@ -67,9 +60,8 @@
   }
 }
 
-.bottomLine {
+.line {
   position: absolute;
-  bottom: -973px;
   right: 0;
   z-index: -1;
 }

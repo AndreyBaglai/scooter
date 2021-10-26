@@ -5,10 +5,9 @@ import { useStore } from 'stores';
 
 import ToggleTheme from 'components/ToggleTheme';
 
-import { ReactComponent as BikeIcon } from 'sources/icons/header-bike.svg';
-import { ReactComponent as EllipseIcon } from 'sources/icons/ellipses/header.svg';
 import darkBikeSrc from '../../../sources/images/dark-header-bike.png';
 import lightBikeSrc from '../../../sources/images/light-header-bike.png';
+import ellipseSrc from '../../../sources/images/ellipses/header.png';
 
 import styles from './styles.module.scss';
 import cn from 'classnames';
@@ -28,8 +27,7 @@ const Battery: React.FC = observer(() => {
 
       <img src={theme === 'dark' ? darkBikeSrc : lightBikeSrc} alt="bike" className={styles.bike} />
 
-      {/* <EllipseIcon className={styles.ellipse} /> */}
-      {/* <BikeIcon className={styles.bike} /> */}
+      <img src={ellipseSrc} className={styles.ellipse} alt="ellipse" />
     </section>
   );
 });

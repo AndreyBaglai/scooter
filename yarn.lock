@@ -1877,6 +1877,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-slick@^0.23.7":
+  "integrity" "sha512-v5/puo5Ix+ZeWNo2wqzfEP5CaTtEMU3qByESGt3brp98mIyKhssNaB2hgGrshu+lHAXkV1ku78Tea6FtztyXug=="
+  "resolved" "https://registry.npmjs.org/@types/react-slick/-/react-slick-0.23.7.tgz"
+  "version" "0.23.7"
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*", "@types/react@^17.0.0":
   "integrity" "sha512-3Dt/A8gd3TCXi2aRe84y7cK1K8G+N9CZRDG8kDGguOKa0kf/ZkSwTmVIDPsm/KbQOVMaDJXwhBtuOXxqwdpWVg=="
   "resolved" "https://registry.npmjs.org/@types/react/-/react-17.0.30.tgz"

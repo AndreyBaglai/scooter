@@ -3,9 +3,9 @@ import React from 'react';
 import imgPath1 from '../../../sources/images/modern-design-1.png';
 import imgPath2 from '../../../sources/images/modern-design-2.png';
 
-import { ReactComponent as TopEllipseIcon } from 'sources/icons/ellipses/design.svg';
-import { ReactComponent as BottomEllipseIcon } from 'sources/icons/ellipses/design.svg';
-import { ReactComponent as LineIcon } from 'sources/icons/lines/design.svg';
+import topEllipseSrc from '../../../sources/images/ellipses/top-design.png';
+import bottomEllipseSrc from '../../../sources/images/ellipses/bottom-design.png';
+import lineSrc from '../../../sources/images/lines/design.png';
 
 import styles from './styles.module.scss';
 import cn from 'classnames';
@@ -13,7 +13,7 @@ import cn from 'classnames';
 const Design: React.FC = () => {
   return (
     <section className={cn('container', styles.design)}>
-      {/* <TopEllipseIcon className={styles.topEllipse} /> */}
+      <img src={topEllipseSrc} className={styles.topEllipse} alt="top ellipse" />
 
       <h2 className={styles.title}>Лаконичный современный дизайн, в котором нет ничего лишнего</h2>
       <div className={styles.imgWrapper}>
@@ -42,8 +42,8 @@ const Design: React.FC = () => {
         </div>
       </div>
 
-       {/* <BottomEllipseIcon className={styles.bottomEllipse} />
-       <LineIcon className={styles.line}/> */}
+       <img src={bottomEllipseSrc} className={styles.bottomEllipse} alt="bottom ellipse" />
+       <img src={lineSrc} className={styles.line} alt="line" />
     </section>
   );
 };
