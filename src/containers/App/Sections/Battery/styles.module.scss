@@ -67,6 +67,11 @@
   top: 0;
   right: 0;
   z-index: -2;
+
+  @include _769 {
+    top: -204px;
+    right: -174px;
+  }
 }
 
 .bike {
