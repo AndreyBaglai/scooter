@@ -1,11 +1,11 @@
 import React from 'react';
 
-import imgSrc1 from '../../../sources/images/description-1.png';
-import imgSrc2 from '../../../sources/images/description-2.png';
-import imgSrc3 from '../../../sources/images/description-3.png';
-import imgSrc4 from '../../../sources/images/description-4.png';
+import imgSrc1 from 'sources/images/description-1.png';
+import imgSrc2 from 'sources/images/description-2.png';
+import imgSrc3 from 'sources/images/description-3.png';
+import imgSrc4 from 'sources/images/description-4.png';
 
-import lineSrc from '../../../sources/images/lines/description.png';
+import lineSrc from 'sources/images/lines/description.png';
 
 import styles from './styles.module.scss';
 import cn from 'classnames';

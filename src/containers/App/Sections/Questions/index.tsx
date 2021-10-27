@@ -1,7 +1,7 @@
 import React from 'react';
 
+import Preview from './Preview';
 import Button from 'components/Button';
-import Preview from '../Preview';
 
 import rightEllipseSrc from 'sources/images/ellipses/right-questions.png';
 import lineSrc from 'sources/images/lines/questions.png';
@@ -64,6 +64,7 @@ const Questions: React.FC = () => {
           </li>
         </ul>
       </section>
+
       <Preview />
     </>
   );

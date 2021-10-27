@@ -6,9 +6,8 @@ import { useStore } from 'stores';
 import Button from 'components/Button';
 import ToggleTheme from 'components/ToggleTheme';
 
-import { ReactComponent as BikeIcon } from 'sources/icons/footer-bike.svg';
-import darkBikeSrc from '../../../sources/images/dark-footer-bike.png';
-import lightBikeSrc from '../../../sources/images/light-footer-bike.png';
+import darkBikeSrc from 'sources/images/dark-footer-bike.png';
+import lightBikeSrc from 'sources/images/light-footer-bike.png';
 
 import styles from './styles.module.scss';
 

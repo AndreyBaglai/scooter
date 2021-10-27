@@ -1,10 +1,10 @@
 import React from 'react';
 
-import imgPath1 from '../../../sources/images/modern-design-1.png';
-import imgPath2 from '../../../sources/images/modern-design-2.png';
+import imgPath1 from 'sources/images/modern-design-1.png';
+import imgPath2 from 'sources/images/modern-design-2.png';
 
-import topEllipseSrc from '../../../sources/images/ellipses/top-design.png';
-import lineSrc from '../../../sources/images/lines/design.png';
+import topEllipseSrc from 'sources/images/ellipses/top-design.png';
+import lineSrc from 'sources/images/lines/design.png';
 
 import styles from './styles.module.scss';
 import cn from 'classnames';
@@ -17,7 +17,7 @@ const Design: React.FC = () => {
       <h2 className={styles.title}>Лаконичный современный дизайн, в котором нет ничего лишнего</h2>
       <div className={styles.imgWrapper}>
         <div className={styles.item}>
-          <img src={imgPath1} alt="design" className={styles.img}/>
+          <img src={imgPath1} alt="design" className={styles.img} />
           <div className={styles.description}>
             <h4 className={styles.text}>Минималистичный дизайн </h4>
             <p className={styles.subtext}>
@@ -29,7 +29,7 @@ const Design: React.FC = () => {
         </div>
 
         <div className={styles.item}>
-          <img src={imgPath2} alt="design" className={styles.img}/>
+          <img src={imgPath2} alt="design" className={styles.img} />
           <div className={styles.description}>
             <h4 className={styles.text}>Удобная панель управления</h4>
             <p className={styles.subtext}>
@@ -41,7 +41,7 @@ const Design: React.FC = () => {
         </div>
       </div>
 
-       <img src={lineSrc} className={styles.line} alt="line" />
+      <img src={lineSrc} className={styles.line} alt="line" />
     </section>
   );
 };

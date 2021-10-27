@@ -3,11 +3,9 @@ import { observer } from 'mobx-react-lite';
 
 import { useStore } from 'stores';
 
-import styles from './styles.module.scss';
-import cn from 'classnames';
+import { getElementsByDataAttr, setElementsListStyleProperty } from 'utils/helpers-DOM';
 
-const getElementsByDataAttr = (dataAttr: string): HTMLElement[] =>
-  Array.from(document.querySelectorAll(`span[${dataAttr}]`));
+import styles from './styles.module.scss';
 
 const ToggleTheme: React.FC = observer(() => {
   const { themeStore } = useStore();
@@ -20,8 +18,9 @@ const ToggleTheme: React.FC = observer(() => {
     if (themeFromLS === 'light') {
       const toggleThumbs: HTMLElement[] = getElementsByDataAttr('data-thumb="thumb"');
       const lightTextElements = getElementsByDataAttr('data-light="light"');
-      toggleThumbs.forEach((thumb: HTMLElement) => (thumb.style.right = '115px'));
-      lightTextElements.forEach((el: HTMLElement) => (el.style.color = '#f1f1f1'));
+
+      setElementsListStyleProperty(toggleThumbs, 'right', '115px');
+      setElementsListStyleProperty(lightTextElements, 'color', '#f1f1f1');
     } else {
       document.body.classList.add('dark');
     }
@@ -34,22 +33,18 @@ const ToggleTheme: React.FC = observer(() => {
 
     document.body.classList.toggle('dark');
 
-    // console.log(theme);
+    setElementsListStyleProperty(lightTextElements, 'color', '#f1f1f1');  setElementsListStyleProperty(darkTextElements, 'color', '#000000');
 
     if (theme === 'light') {
       themeStore.changeTheme('dark');
       localStorage.setItem('theme', 'dark');
-      toggleThumbs.forEach((thumb: HTMLElement) => (thumb.style.right = '0'));
 
-      lightTextElements.forEach((el: HTMLElement) => (el.style.color = '#f1f1f1'));
-      darkTextElements.forEach((el: HTMLElement) => (el.style.color = '#000'));
+      setElementsListStyleProperty(toggleThumbs, 'right', '0');
     } else if (theme === 'dark') {
       themeStore.changeTheme('light');
       localStorage.setItem('theme', 'light');
-      toggleThumbs.forEach((thumb: HTMLElement) => (thumb.style.right = '115px'));
 
-      lightTextElements.forEach((el: HTMLElement) => (el.style.color = '#f1f1f1'));
-      darkTextElements.forEach((el: HTMLElement) => (el.style.color = '#000'));
+      setElementsListStyleProperty(toggleThumbs, 'right', '115px');
     }
   };
 

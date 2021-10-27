@@ -1,10 +1,10 @@
 import React from 'react';
 
-import imgSrc1 from '../../../sources/images/security-1.png';
-import imgSrc2 from '../../../sources/images/security-2.png';
-import imgSrc3 from '../../../sources/images/security-brake.png';
-import imgSrc4 from '../../../sources/images/security-backlight.png';
-import imgSrc5 from '../../../sources/images/security-reflection.png';
+import imgSrc1 from 'sources/images/security-1.png';
+import imgSrc2 from 'sources/images/security-2.png';
+import imgSrc3 from 'sources/images/security-brake.png';
+import imgSrc4 from 'sources/images/security-backlight.png';
+import imgSrc5 from 'sources/images/security-reflection.png';
 
 import styles from './styles.module.scss';
 import cn from 'classnames';
@@ -45,11 +45,14 @@ const Security: React.FC = () => {
           <img src={imgSrc4} alt="backlight" className={styles.columnImg} />
         </div>
 
-        <div className={styles.column}> 
-          <h4 className={cn(styles.columnTitle, styles.second)}>Отражатели спереди, сбоку и сзади</h4>
+        <div className={styles.column}>
+          <h4 className={cn(styles.columnTitle, styles.second)}>
+            Отражатели спереди, сбоку и сзади
+          </h4>
           <div className={styles.line}></div>
           <p className={styles.text}>
-          Улучшенные отражатели, размещенные с четырех сторон, делают вашу поездку в темное время суток безопаснее.
+            Улучшенные отражатели, размещенные с четырех сторон, делают вашу поездку в темное время
+            суток безопаснее.
           </p>
           <img src={imgSrc5} alt="reflection" className={styles.columnImg} />
         </div>

@@ -5,9 +5,9 @@ import { useStore } from 'stores';
 
 import ToggleTheme from 'components/ToggleTheme';
 
-import darkBikeSrc from '../../../sources/images/dark-header-bike.png';
-import lightBikeSrc from '../../../sources/images/light-header-bike.png';
-import ellipseSrc from '../../../sources/images/ellipses/header.png';
+import darkBikeSrc from 'sources/images/dark-header-bike.png';
+import lightBikeSrc from 'sources/images/light-header-bike.png';
+import ellipseSrc from 'sources/images/ellipses/header.png';
 
 import styles from './styles.module.scss';
 import cn from 'classnames';

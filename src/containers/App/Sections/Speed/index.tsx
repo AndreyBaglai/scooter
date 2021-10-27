@@ -10,7 +10,6 @@ const Speed: React.FC = () => {
   return (
     <section className={styles.speed}>
       <div className="container">
-
         <div className={styles.content}>
           <Logo />
           <h2 className={styles.title}>Высокая скорость передвижения</h2>

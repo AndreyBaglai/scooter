@@ -65,8 +65,9 @@ const Reviews: React.FC = () => {
           <li className={styles.circle}></li>
           <li className={styles.circle}></li>
         </ul>
-        
+
         <Button>Оставить отзыв</Button>
+
         <div className={styles.arrowsWrapper}>
           <LeftArrowIcon className={styles.leftArrow} />
           <RightArrowIcon className={styles.rightArrow} />

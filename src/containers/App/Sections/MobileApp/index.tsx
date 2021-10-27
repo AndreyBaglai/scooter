@@ -3,7 +3,7 @@ import React from 'react';
 import { ReactComponent as AppleIcon } from 'sources/icons/apple.svg';
 import { ReactComponent as GoogleIcon } from 'sources/icons/google.svg';
 
-import topEllipseSrc from '../../../sources/images/ellipses/top-mobile-app.png';
+import topEllipseSrc from 'sources/images/ellipses/top-mobile-app.png';
 
 import styles from './styles.module.scss';
 import cn from 'classnames';

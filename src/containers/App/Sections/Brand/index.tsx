@@ -2,8 +2,7 @@ import React from 'react';
 
 import Logo from 'components/Logo';
 
-import { ReactComponent as LineIcon } from 'sources/icons/lines/brand.svg';
-import lineSrc from '../../../sources/images/lines/brand.png';
+import lineSrc from 'sources/images/lines/brand.png';
 
 import styles from './styles.module.scss';
 
