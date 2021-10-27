@@ -1,4 +1,4 @@
-import { CSSDeclarations } from "types/styles";
+import { CSSDeclarations } from "types/css-declarations";
 
 export const getElementsByDataAttr = (dataAttr: string): HTMLElement[] =>
   Array.from(document.querySelectorAll(`span[${dataAttr}]`));
