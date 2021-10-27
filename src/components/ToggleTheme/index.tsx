@@ -33,7 +33,8 @@ const ToggleTheme: React.FC = observer(() => {
 
     document.body.classList.toggle('dark');
 
-    setElementsListStyleProperty(lightTextElements, 'color', '#f1f1f1');  setElementsListStyleProperty(darkTextElements, 'color', '#000000');
+    setElementsListStyleProperty(lightTextElements, 'color', '#f1f1f1');
+    setElementsListStyleProperty(darkTextElements, 'color', '#000000');
 
     if (theme === 'light') {
       themeStore.changeTheme('dark');
