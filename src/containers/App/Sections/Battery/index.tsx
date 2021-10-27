@@ -23,6 +23,7 @@ const Battery: React.FC = observer(() => {
         Улучшенная производительность для дальних путешествий. Работает так же просто, как и
         выглядит.
       </span>
+      
       <ToggleTheme />
 
       <img src={theme === 'dark' ? darkBikeSrc : lightBikeSrc} alt="bike" className={styles.bike} />

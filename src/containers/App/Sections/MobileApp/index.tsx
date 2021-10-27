@@ -20,6 +20,7 @@ const MobileApp: React.FC = () => {
           разблокировки самоката, а так же просмотра основных данных: пробег, скорость, уровень
           заряда аккумулятора.
         </p>
+        
         <ul className={styles.stores}>
           <li className={styles.store}>
             <AppleIcon />

@@ -12,6 +12,7 @@ const Reviews: React.FC = () => {
   return (
     <section className={cn('container', styles.reviews)}>
       <h2 className={styles.title}>Отзывы о Mi Scooter Pro 2</h2>
+      
       <div className={styles.slider}>
         <div className={styles.slide}>
           <h4 className={styles.name}>Михаил Сафонов</h4>

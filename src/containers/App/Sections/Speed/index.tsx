@@ -13,6 +13,7 @@ const Speed: React.FC = () => {
         <div className={styles.content}>
           <Logo />
           <h2 className={styles.title}>Высокая скорость передвижения</h2>
+          
           <p className={styles.text}>
             Двигатель мощностью до 600 Вт позволяет развивать скорость до 25 км/ч.
           </p>

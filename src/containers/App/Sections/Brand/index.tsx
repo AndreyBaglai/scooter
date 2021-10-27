@@ -12,6 +12,7 @@ const Brand: React.FC = () => {
       <div className="container">
         <div className={styles.content}>
           <Logo />
+          
           <div className={styles.wrapper}>
             <h2 className={styles.title}>О бренде Xiaomi</h2>
             <p className={styles.text}>
