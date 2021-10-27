@@ -1,19 +1,17 @@
-@import 'sources/styles/media-mixin.scss';
+@import 'sources/styles/mixins/media-mixin.scss';
+@import 'sources/styles/mixins/typography-mixin.scss';
 
 .design {
   background-color: var(--page-background);
-  position: relative;
   z-index: 10;
   margin-bottom: 120px;
-  transition: all 0.5s ease;
 
   @include _620 {
     margin-bottom: 200px !important;
   }
 
   .title {
-    font-weight: 500;
-    font-size: 45px;
+    @include fontTitle;
     color: var(--title-color);
     margin: 0 0 70px 0;
     max-width: 740px;
@@ -116,10 +114,9 @@
         }
 
         .subtext {
+          @include defaultText;
           font-weight: normal;
-          font-size: 14px;
           max-width: 430px;
-          line-height: 1.5;
 
           @include _620 {
             font-size: 12px;

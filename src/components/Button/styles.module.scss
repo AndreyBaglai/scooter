@@ -1,4 +1,4 @@
-@import 'sources/styles/media-mixin.scss';
+@import 'sources/styles/mixins/media-mixin.scss';
 
 .btn {
   padding: 15px 35px;
@@ -18,13 +18,13 @@
   }
 
   &:hover {
-    background-color: #FF4C0D;
+    background-color: #ff4c0d;
     color: #fff;
   }
 }
 
 .orange {
-  background-color: #FF4C0D;
+  background-color: #ff4c0d;
   color: #fff;
 
   &:hover {

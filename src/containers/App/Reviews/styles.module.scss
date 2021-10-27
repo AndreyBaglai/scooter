@@ -1,14 +1,13 @@
-@import 'sources/styles/media-mixin.scss';
+@import 'sources/styles/mixins/media-mixin.scss';
+@import 'sources/styles/mixins/typography-mixin.scss';
 
 .reviews {
   overflow-x: hidden;
   margin-bottom: 120px;
   background-color: var(--page-background);
-  transition: all 0.5s ease;
 
   .title {
-    font-weight: 500;
-    font-size: 45px;
+    @include fontTitle;
     color: #ff4c0d;
     margin: 0 0 40px 0;
 
@@ -59,10 +58,9 @@
       }
 
       .text {
+        @include defaultText;
         color: var(--text-color);
         font-weight: normal;
-        font-size: 14px;
-        line-height: 1.5;
 
         @include _620 {
           font-size: 12px;
@@ -73,8 +71,7 @@
         margin: 0;
         color: #f1f1f1;
         font-weight: normal;
-        line-height: 1.5;
-        font-size: 14px;
+        @include defaultText;
       }
     }
   }

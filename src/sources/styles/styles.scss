@@ -1,6 +1,6 @@
 @import './dark-theme-variables.scss';
 @import './light-theme-variables.scss';
-@import './media-mixin.scss';
+@import './mixins/media-mixin.scss';
 
 :root {
   --page-background: #{$light-page-bg};
@@ -47,6 +47,8 @@ body {
   padding: 0 140px;
   box-sizing: border-box;
   margin: 0 auto 50px;
+  position: relative;
+  transition: all 0.5s ease;
 
   @include _1100 {
     padding: 0 70px;

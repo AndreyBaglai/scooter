@@ -1,4 +1,4 @@
-@import 'sources/styles/media-mixin.scss';
+@import 'sources/styles/mixins/media-mixin.scss';
 
 .toggle {
   width: 250px;
@@ -15,7 +15,7 @@
   .light,
   .dark {
     display: inline-block;
-    text-align: center; 
+    text-align: center;
     padding: 15px 20px;
     cursor: pointer;
     width: 32%;
@@ -25,7 +25,7 @@
     position: relative;
   }
 
-  .dark {  
+  .dark {
     color: #000;
   }
 

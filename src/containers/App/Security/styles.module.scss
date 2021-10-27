@@ -1,20 +1,18 @@
-@import 'sources/styles/media-mixin.scss';
+@import 'sources/styles/mixins/media-mixin.scss';
+@import 'sources/styles/mixins/typography-mixin.scss';
 
 .security {
   background-color: var(--page-background);
-  position: relative;
   z-index: 9;
   margin-bottom: 120px;
-  transition: all 0.5s ease;
 
   @include _620 {
     margin-bottom: 0 !important;
   }
 
   .title {
+    @include fontTitle;
     margin: 0 0 60px 0;
-    font-weight: 500;
-    font-size: 45px;
     color: var(--title-color);
     max-width: 870px;
 
@@ -86,11 +84,10 @@
       }
 
       .text {
+        @include defaultText;
         font-weight: normal;
-        font-size: 14px;
         color: var(--text-color);
         opacity: 0.4;
-        line-height: 1.5;
         max-width: 260px;
         transition: all 0.5s ease;
 

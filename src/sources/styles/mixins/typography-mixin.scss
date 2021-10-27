@@ -1,0 +1,9 @@
+@mixin fontTitle {
+  font-weight: 500;
+  font-size: 45px
+}
+
+@mixin defaultText {
+  font-size: 14px;
+  line-height: 1.5;
+}

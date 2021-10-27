@@ -1,12 +1,11 @@
-@import 'sources/styles/media-mixin.scss';
+@import 'sources/styles/mixins/media-mixin.scss';
+@import 'sources/styles/mixins/typography-mixin.scss';
 
 .mobileApp {
   background-color: var(--page-background);
   display: flex;
-  position: relative;
   z-index: 11;
   margin-bottom: 0 !important;
-  transition: all 0.5s ease;
 
   @include _620 {
     flex-direction: column;
@@ -16,9 +15,8 @@
     position: relative;
 
     .title {
+      @include fontTitle;
       max-width: 514px;
-      font-weight: 500;
-      font-size: 45px;
       color: #ff4c0d;
       margin: 110px 0 40px 0;
 
@@ -33,12 +31,11 @@
     }
 
     .text {
+      @include defaultText;
       max-width: 320px;
       font-weight: normal;
-      font-size: 14px;
       color: var(--text-color);
       margin: 0 0 60px 0;
-      line-height: 1.5;
 
       @include _620 {
         font-size: 12px;
@@ -94,4 +91,3 @@
   right: 0;
   z-index: -1;
 }
-
