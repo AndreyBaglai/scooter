@@ -2,6 +2,9 @@ import React from 'react';
 
 import { ReactComponent as CloseIcon } from 'sources/icons/close.svg';
 
+import ellipseSrc from 'sources/images/ellipses/questions.png';
+import lineSrc from 'sources/images/lines/description.png';
+
 import styles from './styles.module.scss';
 
 interface IProps {
@@ -13,7 +16,9 @@ const MobileNavigation: React.FC<IProps> = ({ onCloseMobileMenu }) => {
     <nav id="mobileMenu" className={styles.mobileNav}>
       <CloseIcon className={styles.closeIcon} onClick={onCloseMobileMenu} />
 
-      <ul className={styles.nav}> 
+      <ul className={styles.nav}>
+      <img src={ellipseSrc} className={styles.ellipse} alt="ellipse" />
+      
         <li>
           <a className={styles.link} href="/#">О продукте</a>
         </li>
@@ -29,6 +34,8 @@ const MobileNavigation: React.FC<IProps> = ({ onCloseMobileMenu }) => {
         <li>
           <a className={styles.link} href="/#">FAQ</a>
         </li>
+
+        <img src={lineSrc} className={styles.bottomLine} alt="line" />
       </ul>
     </nav>
   )

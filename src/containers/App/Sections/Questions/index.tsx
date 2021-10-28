@@ -3,7 +3,7 @@ import React from 'react';
 import Preview from './Preview';
 import Button from 'components/Button';
 
-import rightEllipseSrc from 'sources/images/ellipses/right-questions.png';
+import ellipseSrc from 'sources/images/ellipses/questions.png';
 import lineSrc from 'sources/images/lines/questions.png';
 
 import styles from './styles.module.scss';
@@ -13,7 +13,7 @@ const Questions: React.FC = () => {
   return (
     <>
       <section className={cn('container', styles.questions)}>
-        <img src={rightEllipseSrc} className={styles.rightEllipse} alt="right ellipse" />
+        <img src={ellipseSrc} className={styles.ellipse} alt="ellipse" />
 
         <img src={lineSrc} className={styles.lineIcon} alt="line" />
 
