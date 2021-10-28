@@ -1,7 +1,9 @@
 import React from 'react';
 
-import Preview from './Preview';
 import Button from 'components/Button';
+
+import QuestionsList from './QuestionsList';
+import Preview from './Preview';
 
 import ellipseSrc from 'sources/images/ellipses/questions.png';
 import lineSrc from 'sources/images/lines/questions.png';
@@ -28,41 +30,7 @@ const Questions: React.FC = () => {
           <Button>Задать вопрос</Button>
         </div>
 
-        <ul className={styles.questionsList}>
-          <li>
-            <h4 className={styles.question}>На него нужны права категории M?</h4>
-            <div className={styles.orangeLine}></div>
-            <p className={styles.answer}>
-              Продуманный угол рассеивания света позволяет сохранять хорошую видимость, не ослепляя
-              других участников движения.
-            </p>
-          </li>
-
-          <li>
-            <h4 className={styles.question}>У меня вес 135 кг, выдержит ли этот самокат?</h4>
-            <div className={styles.orangeLine}></div>
-            <p className={styles.answer}>
-              Самокат определенно выдержит и будет ехать, но не с максимальной скоростью.
-            </p>
-          </li>
-
-          <li>
-            <h4 className={styles.question}>Есть ли влагозащита?</h4>
-            <div className={styles.orangeLine}></div>
-            <p className={styles.answer}>
-              Электросамокат имеет степень защиты IP54. Он защищен от попадания пыли и брызг,
-              падающих в любом направлении. Погружение в воду может привести к поломке.
-            </p>
-          </li>
-
-          <li>
-            <h4 className={styles.question}>Это версия для Китая или Европы?</h4>
-            <div className={styles.orangeLine}></div>
-            <p className={styles.answer}>
-              Это Европейская версия, со всеми обновлениями и евро-вилкой.
-            </p>
-          </li>
-        </ul>
+        <QuestionsList />
       </section>
 
       <Preview />

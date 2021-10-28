@@ -20,62 +20,6 @@
     }
   }
 
-  .slider {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 24px;
-    overflow-x: hidden;
-    max-width: 100%;
-
-    .slide {
-      background: var(--review-item-background);
-      border-radius: 15px;
-      padding: 28px;
-      margin-right: 40px;
-      min-width: 460px;
-      box-sizing: border-box;
-
-      @include _620 {
-        min-width: 100%;
-        padding-bottom: 0;
-      }
-
-      .name {
-        color: var(--text-color);
-        font-weight: 600;
-        font-size: 20px;
-        margin: 0 0 14px 0;
-
-        @include _620 {
-          font-size: 16px;
-        }
-      }
-
-      .orangeLine {
-        width: 100px;
-        height: 3px;
-        background: var(--review-line-background);
-      }
-
-      .text {
-        @include defaultText;
-        color: var(--text-color);
-        font-weight: normal;
-
-        @include _620 {
-          font-size: 12px;
-        }
-      }
-
-      .innerText {
-        @include defaultText;
-        margin: 0;
-        color: #f1f1f1;
-        font-weight: normal;
-      }
-    }
-  }
-
   .controls {
     display: flex;
     justify-content: space-between;
