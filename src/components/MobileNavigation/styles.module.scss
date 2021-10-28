@@ -1,0 +1,58 @@
+.mobileNav {
+  position: fixed;
+  z-index: 2000;
+  height: 100%;
+  top: 0;
+  left: -10000px;
+  transition: all 0.5s ease;
+
+  .closeIcon {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover path {
+      opacity: 0.6;
+    }
+
+    path {
+      fill: var(--close-icon-color);
+      transition: all 0.5s ease;
+    }
+  }
+
+  .nav {
+    height: inherit;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    list-style: none;
+    padding-left: 40px;
+    width: 200px;
+    background-color: var(--mobile-nav-background);
+
+    li {
+      padding-bottom: 50px;
+    }
+
+    .link {
+      text-decoration: none;
+      color: var(--nav-link-color);
+      font-size: 18px;
+      font-weight: normal;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: #FF4C0D;
+      }
+    }
+  }
+}
+
+.open {
+  left: 0 !important;
+}

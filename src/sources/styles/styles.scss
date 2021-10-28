@@ -14,6 +14,8 @@
   --review-item-background: #{$light-review-item-bg};
   --review-line-background: #{$light-review-line};
   --mobile-imgPath: url('../images/light-phone.png');
+  --mobile-nav-background: #{$light-mobileNav-bg};
+  --close-icon-color: #{$light-close-icon-color};
 }
 
 .dark {
@@ -28,6 +30,8 @@
   --review-item-background: #{$dark-review-item-bg};
   --review-line-background: #{$dark-review-line};
   --mobile-imgPath: url('../images/dark-phone.png');
+  --mobile-nav-background: #{$dark-mobileNav-bg};
+  --close-icon-color: #{$dark-close-icon-color};
 }
 
 body {

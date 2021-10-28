@@ -1,10 +1,6 @@
 import React from 'react';
 
-import Burger from 'components/Burger';
-import Button from 'components/Button';
 import Header from 'components/Header';
-import Navigation from 'components/Navigation';
-import Logo from 'components/Logo';
 import Footer from 'components/Footer';
 
 import Battery from './Sections/Battery';
@@ -20,12 +16,7 @@ import Questions from './Sections/Questions';
 const App: React.FC = () => {
   return (
     <>
-      <Header>
-        <Logo />
-        <Navigation />
-        <Button>Купить</Button>
-        <Burger />
-      </Header>
+      <Header />
 
       <Battery />
       <Description />
