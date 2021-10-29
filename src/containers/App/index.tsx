@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Header from 'components/Header';
 import Footer from 'components/Footer';
@@ -14,9 +14,24 @@ import Reviews from './Sections/Reviews';
 import Questions from './Sections/Questions';
 
 const App: React.FC = () => {
+  const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
+
+  const onToggleMobileMenu = (event: React.MouseEvent) => {
+    const mobileMenu = document.getElementById('mobileMenu') as HTMLElement;
+    const target = event.target as HTMLElement;
+
+    if (isOpenMobileMenu && (!target.closest('#mobileMenu') || target.closest('#closeIcon'))) {
+      setIsOpenMobileMenu(false);
+      mobileMenu.style.left = '-1000px';
+    } else if (target.closest('#burgerIcon')) {
+      setIsOpenMobileMenu(true);
+      mobileMenu.style.left = '0';
+    }
+  };
+
   return (
-    <>
-      <Header />
+    <div onClick={onToggleMobileMenu}>
+      <Header onToggleMobileMenu={onToggleMobileMenu} />
 
       <Battery />
       <Description />
@@ -29,8 +44,8 @@ const App: React.FC = () => {
       <Questions />
 
       <Footer />
-    </>
+    </div>
   );
-}
+};
 
 export default App;

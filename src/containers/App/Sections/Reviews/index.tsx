@@ -3,9 +3,6 @@ import React from 'react';
 import Button from 'components/Button';
 import Slider from 'components/Slider';
 
-import { ReactComponent as LeftArrowIcon } from 'sources/icons/left-arrow.svg';
-import { ReactComponent as RightArrowIcon } from 'sources/icons/right-arrow.svg';
-
 import styles from './styles.module.scss';
 import cn from 'classnames';
 
@@ -24,11 +21,6 @@ const Reviews: React.FC = () => {
         </ul>
 
         <Button>Оставить отзыв</Button>
-
-        <div className={styles.arrowsWrapper}>
-          <LeftArrowIcon className={styles.leftArrow} />
-          <RightArrowIcon className={styles.rightArrow} />
-        </div>
       </div>
     </section>
   );

@@ -1,3 +1,5 @@
+import { CSSProperties } from 'react';
+
 import { CSSDeclarations } from "types/css-declarations";
 
 export const getElementsByDataAttr = (dataAttr: string): HTMLElement[] =>

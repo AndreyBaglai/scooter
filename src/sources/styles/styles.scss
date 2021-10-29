@@ -2,6 +2,9 @@
 @import './light-theme-variables.scss';
 @import './mixins/media-mixin.scss';
 
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
 :root {
   --page-background: #{$light-page-bg};
   --title-color: #{$light-title};

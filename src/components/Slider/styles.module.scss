@@ -4,8 +4,9 @@
 .slider {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   margin-bottom: 24px;
-  overflow-x: hidden;
+  //overflow: hidden;
   max-width: 100%;
 
   .slide {
@@ -15,6 +16,7 @@
     margin-right: 40px;
     min-width: 460px;
     box-sizing: border-box;
+    min-height: 290px;
 
     @include _620 {
       min-width: 100%;

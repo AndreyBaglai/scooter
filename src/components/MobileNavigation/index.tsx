@@ -8,13 +8,13 @@ import lineSrc from 'sources/images/lines/description.png';
 import styles from './styles.module.scss';
 
 interface IProps {
-  onCloseMobileMenu: () => void;
+  onCloseMobileMenu: (event: React.MouseEvent) => void;
 }
 
 const MobileNavigation: React.FC<IProps> = ({ onCloseMobileMenu }) => {
   return (
     <nav id="mobileMenu" className={styles.mobileNav}>
-      <CloseIcon className={styles.closeIcon} onClick={onCloseMobileMenu} />
+      <CloseIcon id="closeIcon" className={styles.closeIcon} onClick={onCloseMobileMenu} />
 
       <ul className={styles.nav}>
       <img src={ellipseSrc} className={styles.ellipse} alt="ellipse" />

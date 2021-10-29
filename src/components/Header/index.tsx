@@ -1,32 +1,27 @@
 import React from 'react';
 
-import cn from 'classnames';
 import MobileNavigation from 'components/MobileNavigation';
 import Logo from 'components/Logo';
 import Navigation from 'components/Navigation';
 import Button from 'components/Button';
 import Burger from 'components/Burger';
 
+import cn from 'classnames';
+
 import styles from './styles.module.scss';
 
-const Header: React.FC = () => {
-  const onOpenMobileMenu = () => {
-    const menu = document.getElementById('mobileMenu') as HTMLElement;
-    if (menu) menu.style.left = '0';
-  };
+interface IProps {
+  onToggleMobileMenu: (event: React.MouseEvent) => void;
+}
 
-  const onCloseMobileMenu = () => {
-    const menu = document.getElementById('mobileMenu') as HTMLElement;
-    if (menu) menu.style.left = '-1000px';
-  };
-
+const Header: React.FC<IProps> = ({ onToggleMobileMenu }) => {
   return (
     <header className={cn('container', styles.header)}>
-      <MobileNavigation onCloseMobileMenu={onCloseMobileMenu} />
+      <MobileNavigation onCloseMobileMenu={onToggleMobileMenu} />
       <Logo />
       <Navigation />
       <Button>Купить</Button>
-      <Burger onOpenMobileMenu={onOpenMobileMenu} />
+      <Burger onOpenMobileMenu={onToggleMobileMenu} />
     </header>
   );
 };
