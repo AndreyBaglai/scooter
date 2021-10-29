@@ -2,8 +2,8 @@
 @import './light-theme-variables.scss';
 @import './mixins/media-mixin.scss';
 
-@import "~slick-carousel/slick/slick.css"; 
-@import "~slick-carousel/slick/slick-theme.css";
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
 
 :root {
   --page-background: #{$light-page-bg};
@@ -19,6 +19,8 @@
   --mobile-imgPath: url('../images/light-phone.png');
   --mobile-nav-background: #{$light-mobileNav-bg};
   --close-icon-color: #{$light-close-icon-color};
+  --slider-dots-color: #{$light-slider-circle-color};
+  --slider-active-dot-color: #{$light-slider-active-circle};
 }
 
 .dark {
@@ -35,6 +37,8 @@
   --mobile-imgPath: url('../images/dark-phone.png');
   --mobile-nav-background: #{$dark-mobileNav-bg};
   --close-icon-color: #{$dark-close-icon-color};
+  --slider-dots-color: #{$dark-slider-circle-color};
+  --slider-active-dot-color: #{$dark-slider-active-circle};
 }
 
 body {
@@ -67,5 +71,23 @@ body {
 
   @include _620 {
     padding: 0 20px;
+  }
+}
+
+.slick-dots {
+  bottom: -30px;
+
+  @include _335 {
+    bottom: 0;
+  }
+
+  li button:before {
+    color: var(--slider-dots-color);
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  li.slick-active button:before {
+    color: var(--slider-active-dot-color);
   }
 }

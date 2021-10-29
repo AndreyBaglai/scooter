@@ -1,27 +1,37 @@
 import React from 'react';
-import Slider from "react-slick";
+import Slider from 'react-slick';
 
-import { ReactComponent as PrevArrow } from 'sources/icons/prev-arrow.svg';
-import { ReactComponent as NextArrow } from 'sources/icons/next-arrow.svg';
+import NextArrow from './Arrows/NextArrow';
+import PrevArrow from './Arrows/PrevArrow';
 
 import styles from './styles.module.scss';
 
-const settings = {
-  dots: true,
+const sliderSettings = {
+  dots: false,
   infinite: false,
   initialSlide: 0,
-  centerPadding: "60px",
-  className: "center",
+  centerPadding: '60px',
+  className: 'center',
   speed: 500,
   slidesToShow: 2,
   slidesToScroll: 1,
-  nextArrow: <NextArrow className={styles.nextArrow} />,
-  prevArrow: <PrevArrow className={styles.prevArrow} />
+  nextArrow: <NextArrow />,
+  prevArrow: <PrevArrow />,
+  responsive: [
+    {
+      breakpoint: 820,
+      settings: {
+        slidesToShow: 1,
+        dots: true,
+        appendDots: (dots: any) => <ul> {dots} </ul>,
+      },
+    },
+  ],
 };
 
 const _Slider: React.FC = () => {
   return (
-    <Slider {...settings} className={styles.slider}>
+    <Slider {...sliderSettings} className={styles.slider}>
       <div className={styles.slide}>
         <h4 className={styles.name}>Михаил Сафонов</h4>
         <div className={styles.orangeLine}></div>
@@ -46,7 +56,7 @@ const _Slider: React.FC = () => {
         <p className={styles.innerText}>- усилен узел складывания и язычок </p>
         <p className={styles.innerText}>
           - батарея находится в отдельном жёстком алюминиевом корпусе, что исключает её поломку
-          из-за тряски{' '}
+          из-за тряски
         </p>
         <p className={styles.innerText}>
           - установлена поддержка заднего крыла и защита провода заднего габарита.

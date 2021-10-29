@@ -14,12 +14,6 @@ const Reviews: React.FC = () => {
       <Slider />
 
       <div className={styles.controls}>
-        <ul className={styles.horizontalCircles}>
-          <li className={styles.circle}></li>
-          <li className={styles.circle}></li>
-          <li className={styles.circle}></li>
-        </ul>
-
         <Button>Оставить отзыв</Button>
       </div>
     </section>
