@@ -1,6 +1,6 @@
 import { CSSProperties } from 'react';
 
-import { CSSDeclarations } from "types/css-declarations";
+import { CSSDeclarations } from 'types/css-declarations';
 
 export const getElementsByDataAttr = (dataAttr: string): HTMLElement[] =>
   Array.from(document.querySelectorAll(`span[${dataAttr}]`));
@@ -10,5 +10,6 @@ export const setElementsListStyleProperty = (
   property: CSSDeclarations,
   value: string,
 ) => {
+  // const styles: CSSProperties = { [property]: value };
   list.forEach((item) => (item.style[property] = value));
 };
