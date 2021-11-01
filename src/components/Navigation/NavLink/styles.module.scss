@@ -1,0 +1,13 @@
+@import 'sources/styles/mixins/media-mixin.scss';
+
+.link {
+  text-decoration: none;
+  transition: all 0.5s ease;
+  color: var(--nav-link-color);
+  font-size: 14px;
+  padding: 0 20px;
+
+  @include _960 {
+    padding: 0 10px;
+  }
+}

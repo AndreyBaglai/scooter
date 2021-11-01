@@ -1,5 +1,7 @@
 import React from 'react';
 
+import NavLink from './NavLink';
+
 import styles from './styles.module.scss';
 
 const Navigation = () => {
@@ -7,19 +9,19 @@ const Navigation = () => {
     <nav className={styles.navigation}>
       <ul className={styles.nav}> 
         <li>
-          <a className={styles.link} href="/#">О продукте</a>
+          <NavLink>О продукте</NavLink>
         </li>
         <li>
-          <a className={styles.link} href="/#">Внешний вид</a>
+          <NavLink>Внешний вид</NavLink>
         </li>
         <li>
-          <a className={styles.link} href="/#">Безопасность</a>
+          <NavLink>Безопасность</NavLink>
         </li>
         <li>
-          <a className={styles.link} href="/#">Отзывы</a>
+          <NavLink>Отзывы</NavLink>
         </li>
         <li>
-          <a className={styles.link} href="/#">FAQ</a>
+          <NavLink>FAQ</NavLink>
         </li>
       </ul>
     </nav>

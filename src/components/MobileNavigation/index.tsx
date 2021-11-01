@@ -17,7 +17,7 @@ const MobileNavigation: React.FC<IProps> = ({ onCloseMobileMenu }) => {
       <CloseIcon id="closeIcon" className={styles.closeIcon} onClick={onCloseMobileMenu} />
 
       <ul className={styles.nav}>
-      <img src={ellipseSrc} className={styles.ellipse} alt="ellipse" />
+        <img src={ellipseSrc} className={styles.ellipse} alt="ellipse" />
       
         <li>
           <a className={styles.link} href="/#">О продукте</a>
