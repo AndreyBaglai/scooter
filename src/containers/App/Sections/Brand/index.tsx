@@ -25,17 +25,6 @@ const Brand: React.FC = () => {
             </p>
           </div>
         </div>
-        <ul className={styles.verticalCircles}>
-          <li className={styles.circle}></li>
-          <li className={styles.circle}></li>
-          <li className={styles.circle}></li>
-        </ul>
-
-        <ul className={styles.horizontalCircles}>
-          <li className={styles.circle}></li>
-          <li className={styles.circle}></li>
-          <li className={styles.circle}></li>
-        </ul>
       </div>
 
       <img src={lineSrc} className={styles.line} alt="line" />
