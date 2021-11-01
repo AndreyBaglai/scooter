@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Link from './Link';
+
 import { ReactComponent as CloseIcon } from 'sources/icons/close.svg';
 
 import ellipseSrc from 'sources/images/ellipses/questions.png';
@@ -20,19 +22,19 @@ const MobileNavigation: React.FC<IProps> = ({ onCloseMobileMenu }) => {
         <img src={ellipseSrc} className={styles.ellipse} alt="ellipse" />
       
         <li>
-          <a className={styles.link} href="/#">О продукте</a>
+          <Link>О продукте</Link>
         </li>
         <li>
-          <a className={styles.link} href="/#">Внешний вид</a>
+          <Link>Внешний вид</Link>
         </li>
         <li>
-          <a className={styles.link} href="/#">Безопасность</a>
+          <Link>Безопасность</Link>
         </li>
         <li>
-          <a className={styles.link} href="/#">Отзывы</a>
+          <Link>Отзывы</Link>
         </li>
         <li>
-          <a className={styles.link} href="/#">FAQ</a>
+          <Link>FAQ</Link>
         </li>
 
         <img src={lineSrc} className={styles.bottomLine} alt="line" />
